@@ -34,21 +34,15 @@ struct SpeechRecognitionView: View {
     
     var body: some View {
         
-        
         VStack{
-            Text(speechRecognizer.transcript).padding()
             
+            Text(speechRecognizer.transcript)
             Button(action: {
                 
             }, label: {
-                Image(systemName: "mic")
+                Image(systemName: "mic.circle.fill").font(.system(size: 90))
             })
-            .frame(width: 200, height: 50)
-            .foregroundColor(.white)
-            .background(!isPressed ?
-                        Color(UIColor.gray) :
-                            Color(UIColor.black))
-            .cornerRadius(25)
+            .foregroundColor(.gray)
             .pressAction {
                 isPressed = true
                 
@@ -56,9 +50,6 @@ struct SpeechRecognitionView: View {
                 isPressed = false
                 
             }
-            
-            
-            ///
             .onChange(of: isPressed, perform: {_ in
                 if isPressed == true{
                     speechRecognizer.reset()
@@ -68,8 +59,8 @@ struct SpeechRecognitionView: View {
                     speechRecognizer.stopTranscribing()
                 }
             })
-            
         }
+        
     }
 }
 
