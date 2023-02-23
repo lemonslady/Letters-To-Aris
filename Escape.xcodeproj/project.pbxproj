@@ -11,6 +11,8 @@
 		CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B229A629E200D709F1 /* ContentView.swift */; };
 		CB3FC3B529A629E300D709F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3FC3B429A629E300D709F1 /* Assets.xcassets */; };
 		CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */; };
+		CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */; };
+		CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		CB3FC3B229A629E200D709F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB3FC3B429A629E300D709F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		CB3FC3AF29A629E200D709F1 /* Escape */ = {
 			isa = PBXGroup;
 			children = (
+				CB3FC3BE29A62C8000D709F1 /* Model */,
 				CB3FC3B029A629E200D709F1 /* EscapeApp.swift */,
 				CB3FC3B229A629E200D709F1 /* ContentView.swift */,
+				CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */,
 				CB3FC3B429A629E300D709F1 /* Assets.xcassets */,
 				CB3FC3B629A629E300D709F1 /* Preview Content */,
 			);
@@ -65,6 +71,14 @@
 				CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB3FC3BE29A62C8000D709F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */,
+				CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */,
+				CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */,
 				CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +286,8 @@
 				DEVELOPMENT_TEAM = ZSK3Z899D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +317,8 @@
 				DEVELOPMENT_TEAM = ZSK3Z899D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
