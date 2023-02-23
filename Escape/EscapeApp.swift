@@ -11,7 +11,8 @@ import SwiftUI
 struct EscapeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            SpeechRecognitionView()
         }
     }
 }
