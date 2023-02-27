@@ -31,12 +31,13 @@ struct SpeechRecognitionView: View {
     
     @State private var isPressed = false
     @StateObject var speechRecognizer = SpeechRecognizer()
+    @Binding var transcript: String
     
     var body: some View {
         
         VStack{
             
-            Text(speechRecognizer.transcript)
+            //Text(speechRecognizer.transcript)
             Button(action: {
                 
             }, label: {
@@ -57,6 +58,7 @@ struct SpeechRecognitionView: View {
                 }
                 else {
                     speechRecognizer.stopTranscribing()
+                    transcript = speechRecognizer.transcript
                 }
             })
         }
@@ -78,6 +80,6 @@ extension View {
 
 struct SpeechRecognitionView_Previews: PreviewProvider {
     static var previews: some View {
-        SpeechRecognitionView().previewInterfaceOrientation(.landscapeLeft)
+        SpeechRecognitionView(transcript: .constant("")).previewInterfaceOrientation(.landscapeLeft)
     }
 }

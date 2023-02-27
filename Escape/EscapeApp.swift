@@ -12,7 +12,9 @@ struct EscapeApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            SpeechRecognitionView()
+            
+            //MOMENTANEO
+            RoomView(room: Room(background: "room1", audio: [""], subtitles: ["Hello, im't trying to create a room"], objects: [Object(image: "letter")]))
         }
     }
 }

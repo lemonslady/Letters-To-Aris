@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB354F9D29A8B07C00208DB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354F9C29A8B07C00208DB4 /* Room.swift */; };
+		CB354FA129A8B46200208DB4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354FA029A8B46200208DB4 /* Object.swift */; };
 		CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B029A629E200D709F1 /* EscapeApp.swift */; };
 		CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B229A629E200D709F1 /* ContentView.swift */; };
 		CB3FC3B529A629E300D709F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3FC3B429A629E300D709F1 /* Assets.xcassets */; };
 		CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */; };
 		CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */; };
 		CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */; };
+		CB9C902B29ABAEE000014F9A /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C902A29ABAEE000014F9A /* RoomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB354FA029A8B46200208DB4 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		CB3FC3AD29A629E200D709F1 /* Escape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3FC3B029A629E200D709F1 /* EscapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeApp.swift; sourceTree = "<group>"; };
 		CB3FC3B229A629E200D709F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +27,7 @@
 		CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
 		CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
+		CB9C902A29ABAEE000014F9A /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB354FA429A901CF00208DB4 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
 		CB3FC3A429A629E200D709F1 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +67,10 @@
 		CB3FC3AF29A629E200D709F1 /* Escape */ = {
 			isa = PBXGroup;
 			children = (
+				CB354FA429A901CF00208DB4 /* Story */,
 				CB3FC3BE29A62C8000D709F1 /* Model */,
 				CB3FC3B029A629E200D709F1 /* EscapeApp.swift */,
+				CB9C902A29ABAEE000014F9A /* RoomView.swift */,
 				CB3FC3B229A629E200D709F1 /* ContentView.swift */,
 				CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */,
 				CB3FC3B429A629E300D709F1 /* Assets.xcassets */,
@@ -77,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */,
+				CB354F9C29A8B07C00208DB4 /* Room.swift */,
+				CB354FA029A8B46200208DB4 /* Object.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,10 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9C902B29ABAEE000014F9A /* RoomView.swift in Sources */,
 				CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */,
 				CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */,
 				CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */,
+				CB354FA129A8B46200208DB4 /* Object.swift in Sources */,
 				CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */,
+				CB354F9D29A8B07C00208DB4 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
