@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Escape
+
+  Created by Giulia Casucci on 28/02/23.
+  
+*/
+
+"Hello" = "Hello";
+"Buy" = "Buy this book";
+"Register" = "Register for a new account";

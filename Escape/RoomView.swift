@@ -10,15 +10,18 @@ import SwiftUI
 struct RoomView: View {
     @StateObject var room: Room
     @State var transcript: String = ""
+    let stringTest = NSLocalizedString("Hello", comment: "The act of greeting someone")
     
     var body: some View {
         VStack{
             Text(transcript)
             SpeechRecognitionView( transcript: $transcript)
             
+            Text(stringTest).foregroundColor(.white)
             
-        }.background(Image(room.background)
-            .scaledToFit())
+        }.background(Image(room.background))
+        //how to blur the image:
+        //.blur(radius: 8, opaque: false)
             
     }
 }

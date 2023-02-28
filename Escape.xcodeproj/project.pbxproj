@@ -17,6 +17,7 @@
 		CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */; };
 		CB8619A929ACB42B004B81F6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8619A829ACB42B004B81F6 /* Room.swift */; };
 		CB9C902B29ABAEE000014F9A /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C902A29ABAEE000014F9A /* RoomView.swift */; };
+		CBF5EB8729AE7FB400231706 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBF5EB8929AE7FB400231706 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
 		CB8619A829ACB42B004B81F6 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		CB9C902A29ABAEE000014F9A /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		CBF5EB8829AE7FB400231706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CBF5EB8A29AE7FBC00231706 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */,
 				CB3FC3B429A629E300D709F1 /* Assets.xcassets */,
 				CB3FC3B629A629E300D709F1 /* Preview Content */,
+				CBF5EB8929AE7FB400231706 /* Localizable.strings */,
 			);
 			path = Escape;
 			sourceTree = "<group>";
@@ -141,6 +145,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = CB3FC3A429A629E200D709F1;
 			productRefGroup = CB3FC3AE29A629E200D709F1 /* Products */;
@@ -158,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */,
+				CBF5EB8729AE7FB400231706 /* Localizable.strings in Resources */,
 				CB3FC3B529A629E300D709F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +187,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBF5EB8929AE7FB400231706 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF5EB8829AE7FB400231706 /* en */,
+				CBF5EB8A29AE7FBC00231706 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB3FC3B929A629E300D709F1 /* Debug */ = {
