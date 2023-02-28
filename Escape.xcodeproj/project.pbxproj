@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB354F9D29A8B07C00208DB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354F9C29A8B07C00208DB4 /* Room.swift */; };
+		CB354F9D29A8B07C00208DB4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CB354FA129A8B46200208DB4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354FA029A8B46200208DB4 /* Object.swift */; };
 		CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B029A629E200D709F1 /* EscapeApp.swift */; };
 		CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B229A629E200D709F1 /* ContentView.swift */; };
@@ -15,6 +15,7 @@
 		CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */; };
 		CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */; };
 		CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */; };
+		CB8619A929ACB42B004B81F6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8619A829ACB42B004B81F6 /* Room.swift */; };
 		CB9C902B29ABAEE000014F9A /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C902A29ABAEE000014F9A /* RoomView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
 		CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
+		CB8619A829ACB42B004B81F6 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		CB9C902A29ABAEE000014F9A /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */,
-				CB354F9C29A8B07C00208DB4 /* Room.swift */,
+				CB8619A829ACB42B004B81F6 /* Room.swift */,
 				CB354FA029A8B46200208DB4 /* Object.swift */,
 			);
 			path = Model;
@@ -169,11 +171,12 @@
 			files = (
 				CB9C902B29ABAEE000014F9A /* RoomView.swift in Sources */,
 				CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */,
+				CB8619A929ACB42B004B81F6 /* Room.swift in Sources */,
 				CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */,
 				CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */,
 				CB354FA129A8B46200208DB4 /* Object.swift in Sources */,
 				CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */,
-				CB354F9D29A8B07C00208DB4 /* Room.swift in Sources */,
+				CB354F9D29A8B07C00208DB4 /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Escape/Preview Content\"";
-				DEVELOPMENT_TEAM = T2BSAL5FW2;
+				DEVELOPMENT_TEAM = ZSK3Z899D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Aris;
