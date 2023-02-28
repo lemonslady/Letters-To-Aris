@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB354F9D29A8B07C00208DB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354F9C29A8B07C00208DB4 /* Room.swift */; };
+		3C10A94929ACB673008AEDFE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C10A94829ACB673008AEDFE /* Room.swift */; };
+		3C5E828A29ADFFA000F67C6E /* threeDBUTTON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */; };
+		3C5E828C29AE00E200F67C6E /* mainFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828B29AE00E200F67C6E /* mainFirst.swift */; };
+		3C5E828E29AE105200F67C6E /* threeDBUTTON2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */; };
+		3CF9AC7B29AD443000F890DC /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9AC7A29AD443000F890DC /* mainScreen.swift */; };
+		CB354F9D29A8B07C00208DB4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CB354FA129A8B46200208DB4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354FA029A8B46200208DB4 /* Object.swift */; };
 		CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B029A629E200D709F1 /* EscapeApp.swift */; };
 		CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B229A629E200D709F1 /* ContentView.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C10A94829ACB673008AEDFE /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDBUTTON.swift; sourceTree = "<group>"; };
+		3C5E828B29AE00E200F67C6E /* mainFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainFirst.swift; sourceTree = "<group>"; };
+		3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeDBUTTON2.swift; sourceTree = "<group>"; };
+		3CF9AC7A29AD443000F890DC /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 		CB354FA029A8B46200208DB4 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		CB3FC3AD29A629E200D709F1 /* Escape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3FC3B029A629E200D709F1 /* EscapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeApp.swift; sourceTree = "<group>"; };
@@ -71,10 +81,13 @@
 				CB3FC3BE29A62C8000D709F1 /* Model */,
 				CB3FC3B029A629E200D709F1 /* EscapeApp.swift */,
 				CB9C902A29ABAEE000014F9A /* RoomView.swift */,
+				3CF9AC7A29AD443000F890DC /* mainScreen.swift */,
+				3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */,
 				CB3FC3B229A629E200D709F1 /* ContentView.swift */,
 				CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */,
 				CB3FC3B429A629E300D709F1 /* Assets.xcassets */,
 				CB3FC3B629A629E300D709F1 /* Preview Content */,
+				3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */,
 			);
 			path = Escape;
 			sourceTree = "<group>";
@@ -90,9 +103,10 @@
 		CB3FC3BE29A62C8000D709F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C10A94829ACB673008AEDFE /* Room.swift */,
 				CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */,
-				CB354F9C29A8B07C00208DB4 /* Room.swift */,
 				CB354FA029A8B46200208DB4 /* Object.swift */,
+				3C5E828B29AE00E200F67C6E /* mainFirst.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,13 +181,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5E828E29AE105200F67C6E /* threeDBUTTON2.swift in Sources */,
 				CB9C902B29ABAEE000014F9A /* RoomView.swift in Sources */,
+				3CF9AC7B29AD443000F890DC /* mainScreen.swift in Sources */,
 				CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */,
+				3C10A94929ACB673008AEDFE /* Room.swift in Sources */,
 				CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */,
+				3C5E828A29ADFFA000F67C6E /* threeDBUTTON.swift in Sources */,
 				CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */,
 				CB354FA129A8B46200208DB4 /* Object.swift in Sources */,
 				CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */,
-				CB354F9D29A8B07C00208DB4 /* Room.swift in Sources */,
+				3C5E828C29AE00E200F67C6E /* mainFirst.swift in Sources */,
+				CB354F9D29A8B07C00208DB4 /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

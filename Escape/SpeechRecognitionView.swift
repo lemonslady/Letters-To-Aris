@@ -41,7 +41,8 @@ struct SpeechRecognitionView: View {
             Button(action: {
                 
             }, label: {
-                Image(systemName: "mic.circle.fill").font(.system(size: 90))
+                Image("SpeakShadow").font(.system(size: 90))
+                
             })
             .foregroundColor(.gray)
             .pressAction {

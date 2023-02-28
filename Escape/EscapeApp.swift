@@ -14,7 +14,7 @@ struct EscapeApp: App {
             //ContentView()
             
             //MOMENTANEO
-            RoomView(room: Room(background: "room1", audio: [""], subtitles: ["Hello, im't trying to create a room"], objects: [Object(image: "letter")]))
+            RoomView(room: Room(background: "room2", audio: [""], subtitles: ["Hello, im't trying to create a room"], objects: [Object(image: "letter")]))
         }
     }
 }
