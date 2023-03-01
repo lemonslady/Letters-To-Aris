@@ -26,6 +26,7 @@ struct RoomView: View {
                     Text(transcript)
                     SpeechRecognitionView( transcript: $transcript)
                     
+                    
                 }.frame(maxWidth: 1200, maxHeight: 745, alignment: .bottom)
 
             }

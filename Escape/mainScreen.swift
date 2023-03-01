@@ -33,7 +33,7 @@ struct mainScreen: View {
                         
                         
                     }
-                }.frame(maxWidth: 1100, maxHeight: 150 ,alignment: .trailing)
+                }.frame(maxWidth: 1151, maxHeight: 150 ,alignment: .trailing)
                     .font(.system(size: 45))
                 
                 VStack{
@@ -48,18 +48,19 @@ struct mainScreen: View {
                         .frame(width: 357,height: 43)
                         .foregroundColor(.white)
                         .padding()
-
                         
                         
                         
-                    }
+                        
+                    }.font(.custom("Tabular-Variable.ttf", size: 20))
                     .padding(5)
                     
                     Button{
                         
                     }label: {
-                        Label("How to Play", systemImage: "play.fill")
+                       Text("How to Play")
                     }
+                    .font(.custom("Tabular-Variable.ttf", size: 20))
                     .buttonStyle(threeDBUTTON2())
                     .frame(width: 357,height: 43)
                     .foregroundColor(.black)

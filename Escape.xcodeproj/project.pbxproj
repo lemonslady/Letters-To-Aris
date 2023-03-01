@@ -11,6 +11,7 @@
 		3C5E828A29ADFFA000F67C6E /* threeDBUTTON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */; };
 		3C5E828C29AE00E200F67C6E /* mainFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828B29AE00E200F67C6E /* mainFirst.swift */; };
 		3C5E828E29AE105200F67C6E /* threeDBUTTON2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */; };
+		3C5E82A429AE212900F67C6E /* Tabular-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */; };
 		3CF9AC7B29AD443000F890DC /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9AC7A29AD443000F890DC /* mainScreen.swift */; };
 		CB354F9D29A8B07C00208DB4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CB354FA129A8B46200208DB4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354FA029A8B46200208DB4 /* Object.swift */; };
@@ -28,6 +29,7 @@
 		3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDBUTTON.swift; sourceTree = "<group>"; };
 		3C5E828B29AE00E200F67C6E /* mainFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainFirst.swift; sourceTree = "<group>"; };
 		3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeDBUTTON2.swift; sourceTree = "<group>"; };
+		3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tabular-Variable.ttf"; sourceTree = "<group>"; };
 		3CF9AC7A29AD443000F890DC /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 		CB354FA029A8B46200208DB4 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		CB3FC3AD29A629E200D709F1 /* Escape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escape.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,11 +85,12 @@
 				CB9C902A29ABAEE000014F9A /* RoomView.swift */,
 				3CF9AC7A29AD443000F890DC /* mainScreen.swift */,
 				3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */,
+				3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */,
 				CB3FC3B229A629E200D709F1 /* ContentView.swift */,
 				CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */,
 				CB3FC3B429A629E300D709F1 /* Assets.xcassets */,
+				3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */,
 				CB3FC3B629A629E300D709F1 /* Preview Content */,
-				3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */,
 			);
 			path = Escape;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */,
 				CB3FC3B529A629E300D709F1 /* Assets.xcassets in Resources */,
+				3C5E82A429AE212900F67C6E /* Tabular-Variable.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +328,7 @@
 				DEVELOPMENT_TEAM = T2BSAL5FW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Escape/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Aris;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
@@ -360,6 +365,7 @@
 				DEVELOPMENT_TEAM = T2BSAL5FW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Escape/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Aris;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";

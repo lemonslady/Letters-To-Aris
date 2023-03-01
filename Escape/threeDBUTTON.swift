@@ -16,7 +16,6 @@ import UIKit
                 let offset: CGFloat = 5
                 
                 
-                
                 RoundedRectangle(cornerRadius: 4)
                 
                     .foregroundColor(.black)
@@ -35,6 +34,7 @@ import UIKit
                 
                 
             }
+            
             .compositingGroup()
             
 
