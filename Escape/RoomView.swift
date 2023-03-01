@@ -10,28 +10,35 @@ import SwiftUI
 struct RoomView: View {
     @StateObject var room: Room
     @State var transcript: String = ""
-    
+    @State var object = Object(image: "letter")
 
     
  
     
     
     var body: some View {
-        ZStack{
-            GeometryReader{ geo in
-                Image(room.background)
-                    .resizable()
-                    .ignoresSafeArea()
-                VStack{
-                    Text(transcript)
-                    SpeechRecognitionView( transcript: $transcript)
-                    
-                    
-                }.frame(maxWidth: 1200, maxHeight: 745, alignment: .bottom)
+        NavigationStack {
+            ZStack{
+                GeometryReader{ geo in
+                    Image(room.background)
+                        .resizable()
+                        .ignoresSafeArea()
+                    VStack{
+                        Text(transcript)
+                        SpeechRecognitionView( transcript: $transcript)
+                        
+                        
+                    }
+                    .frame(maxWidth: 1200, maxHeight: 745, alignment: .bottom)
+                    VStack{
+                        Image(object.image)
+                            .frame(width: 900, height: 600)
+                    }
 
+                }
+                    
             }
-                
-            }
+        }
         
     }
         

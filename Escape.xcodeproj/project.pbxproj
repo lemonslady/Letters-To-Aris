@@ -13,6 +13,7 @@
 		3C5E828E29AE105200F67C6E /* threeDBUTTON2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */; };
 		3C5E82A429AE212900F67C6E /* Tabular-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */; };
 		3CF9AC7B29AD443000F890DC /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9AC7A29AD443000F890DC /* mainScreen.swift */; };
+		90E644F429AF5E7D007CB005 /* ViewNavigationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E644F329AF5E7D007CB005 /* ViewNavigationClass.swift */; };
 		CB354F9D29A8B07C00208DB4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CB354FA129A8B46200208DB4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354FA029A8B46200208DB4 /* Object.swift */; };
 		CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B029A629E200D709F1 /* EscapeApp.swift */; };
@@ -31,6 +32,7 @@
 		3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeDBUTTON2.swift; sourceTree = "<group>"; };
 		3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tabular-Variable.ttf"; sourceTree = "<group>"; };
 		3CF9AC7A29AD443000F890DC /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
+		90E644F329AF5E7D007CB005 /* ViewNavigationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigationClass.swift; sourceTree = "<group>"; };
 		CB354FA029A8B46200208DB4 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		CB3FC3AD29A629E200D709F1 /* Escape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3FC3B029A629E200D709F1 /* EscapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeApp.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90E644F229AF5E54007CB005 /* ViewNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				90E644F329AF5E7D007CB005 /* ViewNavigationClass.swift */,
+			);
+			path = ViewNavigation;
+			sourceTree = "<group>";
+		};
 		CB354FA429A901CF00208DB4 /* Story */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 				CB354FA429A901CF00208DB4 /* Story */,
 				CB3FC3BE29A62C8000D709F1 /* Model */,
 				CB3FC3B029A629E200D709F1 /* EscapeApp.swift */,
+				90E644F229AF5E54007CB005 /* ViewNavigation */,
 				CB9C902A29ABAEE000014F9A /* RoomView.swift */,
 				3CF9AC7A29AD443000F890DC /* mainScreen.swift */,
 				3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */,
@@ -190,6 +201,7 @@
 				3CF9AC7B29AD443000F890DC /* mainScreen.swift in Sources */,
 				CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */,
 				3C10A94929ACB673008AEDFE /* Room.swift in Sources */,
+				90E644F429AF5E7D007CB005 /* ViewNavigationClass.swift in Sources */,
 				CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */,
 				3C5E828A29ADFFA000F67C6E /* threeDBUTTON.swift in Sources */,
 				CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */,
