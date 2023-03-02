@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HowToPlayMenu: View {
+    @Binding var shownHTP : Bool
     var body: some View {
         ZStack{
             Rectangle()
@@ -17,7 +18,7 @@ struct HowToPlayMenu: View {
             VStack(alignment: .leading) {
                 HStack{
                     Button{
-                        
+                        shownHTP.toggle()
                     }label: {
                         Image("Xsymbol")
                     }
@@ -72,6 +73,6 @@ struct HowToPlayMenu: View {
 
 struct HowToPlayMenu_Previews: PreviewProvider {
     static var previews: some View {
-        HowToPlayMenu()
+        HowToPlayMenu(shownHTP: .constant(false))
     }
 }

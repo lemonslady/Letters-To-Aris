@@ -18,6 +18,9 @@ struct CustomColor {
 
 
 struct mainScreen: View {
+    
+    @State var shownHTP = false
+    
     var body: some View {
         NavigationStack {
             ZStack{
@@ -33,19 +36,17 @@ struct mainScreen: View {
                         
                     label: {
                             Image(systemName: "gearshape.fill")
-                                .font(.system(size: 55))
+                                .font(.system(size: 40))
                                 .foregroundColor(Color(.white))
                             
                             
                         }
                     }.frame(maxWidth: 1151, maxHeight: 150 ,alignment: .trailing)
-                        .font(.system(size: 45))
                     
                     VStack{
                         ZStack{
-                            
                             NavigationLink {
-                                RoomView(room: Room(background: "room2", audio: [""], subtitles: ["Hello, im't trying to create a room"], objects: [Object(image: "letter")]))
+                                RoomView(shownHTP: $shownHTP, room: Room(background: "room2", audio: [""], subtitles: ["Hello, im't trying to create a room"], objects: [Object(image: "letter")]))
                                     .navigationBarBackButtonHidden(true)
                             } label: {
                                 Label("Play", systemImage: "play.fill")
@@ -59,7 +60,8 @@ struct mainScreen: View {
                             .padding(5)
                         
                         Button{
-                            
+                            shownHTP.toggle()
+                            print(shownHTP)
                         }label: {
                             Text("How to Play")
                         }
@@ -71,6 +73,11 @@ struct mainScreen: View {
                         
                     } .frame(maxWidth: 1300, maxHeight: 730, alignment: .bottom)
                     
+                }
+                .blur(radius: shownHTP ? 8 : 0)
+                
+                if shownHTP {
+                    HowToPlayMenu(shownHTP: $shownHTP)
                 }
             }
         }
