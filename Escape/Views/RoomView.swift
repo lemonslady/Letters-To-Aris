@@ -11,7 +11,7 @@ struct RoomView: View {
     @StateObject var room: Room
     @State var transcript: String = ""
     @State var object = Object(image: "letter")
-
+    @State var subtitle = "The letter smells of ambrosia and orange flowers, fragrant and \n airy. He picks it up, opens it and a mix of emotions almost \n makes his heart stop."
     
  
     
@@ -32,8 +32,17 @@ struct RoomView: View {
                     .frame(maxWidth: 1200, maxHeight: 745, alignment: .bottom)
                     VStack{
                         Image(object.image)
-                            .frame(width: 900, height: 600)
+                            .frame(width: 900, height: 1000)
                     }
+                    VStack{
+                        Text(subtitle)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: 1200, maxHeight: 104, alignment: .center)
+                            .font(.custom("Tabular Variable", size: 20))
+                                .padding(5)
+
+                    } //Commento provvisorio statico utilizzato per il tiktok video
 
                 }
                     
