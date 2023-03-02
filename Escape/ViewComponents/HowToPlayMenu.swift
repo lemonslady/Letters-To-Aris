@@ -31,11 +31,11 @@ struct HowToPlayMenu: View {
             
             VStack(alignment: .center){
                 Text ("How to play")
-                    .font(.custom("Tabular-Variable.ttf", size: 28))
+                    .font(.custom("Tabular Variable", size: 28))
                     .padding()
                 
                 Text("Choose where to look first by pressing")
-                    .font(.custom("Tabular-Variable.ttf", size: 20))
+                    .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
                 HStack{
                     Text("the microphone button")
@@ -44,21 +44,21 @@ struct HowToPlayMenu: View {
                         .frame(width: 27, height: 31)
                     Text("you will see")
                 }
-                .font(.custom("Tabular-Variable.ttf", size: 20))
+                .font(.custom("Tabular Variable", size: 17))
                 .foregroundColor(.gray)
                 
                 Text("on the bottom of the screen.")
-                    .font(.custom("Tabular-Variable.ttf", size: 20))
+                    .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
                 
                 Text("This time you can either choose to look on the night stall, on the bed, or in the drawer.")
-                    .font(.custom("Tabular-Variable.ttf", size: 20))
+                    .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                     .padding()
                 
                 Text ("Just remember to have fun and enjoy the experience")
-                    .font(.custom("Tabular-Variable.ttf", size: 20))
+                    .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                     .padding()

@@ -11,8 +11,8 @@
 		3C5E828A29ADFFA000F67C6E /* threeDBUTTON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */; };
 		3C5E828C29AE00E200F67C6E /* mainFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828B29AE00E200F67C6E /* mainFirst.swift */; };
 		3C5E828E29AE105200F67C6E /* threeDBUTTON2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */; };
-		3C5E82A429AE212900F67C6E /* Tabular-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */; };
 		3CF9AC7B29AD443000F890DC /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9AC7A29AD443000F890DC /* mainScreen.swift */; };
+		901F1F9A29B0BFDB0079B7FE /* Tabular-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 901F1F9929B0BFDB0079B7FE /* Tabular-Variable.ttf */; };
 		90E644F629AFBF23007CB005 /* PauseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E644F529AFBF23007CB005 /* PauseMenu.swift */; };
 		90E644F829AFCCC4007CB005 /* threeDBUTTON3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E644F729AFCCC4007CB005 /* threeDBUTTON3.swift */; };
 		90E644FA29AFD514007CB005 /* HowToPlayMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E644F929AFD514007CB005 /* HowToPlayMenu.swift */; };
@@ -32,8 +32,8 @@
 		3C5E828929ADFFA000F67C6E /* threeDBUTTON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDBUTTON.swift; sourceTree = "<group>"; };
 		3C5E828B29AE00E200F67C6E /* mainFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainFirst.swift; sourceTree = "<group>"; };
 		3C5E828D29AE105200F67C6E /* threeDBUTTON2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeDBUTTON2.swift; sourceTree = "<group>"; };
-		3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tabular-Variable.ttf"; sourceTree = "<group>"; };
 		3CF9AC7A29AD443000F890DC /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
+		901F1F9929B0BFDB0079B7FE /* Tabular-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tabular-Variable.ttf"; sourceTree = "<group>"; };
 		90E644F529AFBF23007CB005 /* PauseMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenu.swift; sourceTree = "<group>"; };
 		90E644F729AFCCC4007CB005 /* threeDBUTTON3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeDBUTTON3.swift; sourceTree = "<group>"; };
 		90E644F929AFD514007CB005 /* HowToPlayMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayMenu.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				CB354FA429A901CF00208DB4 /* Story */,
 				CB3FC3BE29A62C8000D709F1 /* Model */,
 				CB3FC3B429A629E300D709F1 /* Assets.xcassets */,
-				3C5E82A329AE212900F67C6E /* Tabular-Variable.ttf */,
+				901F1F9929B0BFDB0079B7FE /* Tabular-Variable.ttf */,
 				CB3FC3B629A629E300D709F1 /* Preview Content */,
 			);
 			path = Escape;
@@ -199,7 +199,7 @@
 			files = (
 				CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */,
 				CB3FC3B529A629E300D709F1 /* Assets.xcassets in Resources */,
-				3C5E82A429AE212900F67C6E /* Tabular-Variable.ttf in Resources */,
+				901F1F9A29B0BFDB0079B7FE /* Tabular-Variable.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

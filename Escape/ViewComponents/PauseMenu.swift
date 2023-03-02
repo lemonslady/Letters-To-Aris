@@ -32,11 +32,10 @@ struct PauseMenu: View {
             VStack {
                 
                 VStack{
-                    Text ("You are in pause")
-                        .font(.custom("Tabular-Variable.ttf", size: 28))
+                    Text("You are in pause").font(.custom("Tabular Variable", size: 22))
                     Spacer()
                     Text("Continue looking in the room")
-                        .font(.custom("Tabular-Variable.ttf", size: 28))
+                        .font(Font.custom("Tabular Variable", size: 17))
                         .foregroundColor(Color(.gray))
                 }
                 .frame(width: 579, height: 70)
@@ -46,7 +45,7 @@ struct PauseMenu: View {
                 }label: {
                     Text("Resume Game")
                 }
-                .font(.custom("Tabular-Variable.ttf", size: 20))
+                .font(Font.custom("Tabular Variable", size: 17))
                 .buttonStyle(threeD())
                 .frame(width: 357,height: 43)
                 .foregroundColor(.white)
@@ -57,7 +56,7 @@ struct PauseMenu: View {
                 }label: {
                     Text("Quit")
                 }
-                .font(.custom("Tabular-Variable.ttf", size: 20))
+                .font(.custom("Tabular Variable", size: 17))
                 .buttonStyle(threeDBUTTON3())
                 .frame(width: 357,height: 43)
                 .foregroundColor(.white)
@@ -68,7 +67,7 @@ struct PauseMenu: View {
                 }label: {
                     Text("How to Play")
                 }
-                .font(.custom("Tabular-Variable.ttf", size: 20))
+                .font(.custom("Tabular Variable", size: 17))
                 .buttonStyle(threeDBUTTON2())
                 .frame(width: 357,height: 43)
                 .foregroundColor(.black)

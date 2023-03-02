@@ -55,7 +55,7 @@ struct mainScreen: View {
                             .foregroundColor(.white)
                             .padding()
                             
-                        }.font(.custom("Tabular-Variable.ttf", size: 20))
+                        }.font(.custom("Tabular Variable", size: 20))
                             .padding(5)
                         
                         Button{
@@ -63,7 +63,7 @@ struct mainScreen: View {
                         }label: {
                             Text("How to Play")
                         }
-                        .font(.custom("Tabular-Variable.ttf", size: 20))
+                        .font(.custom("Tabular Variable", size: 20))
                         .buttonStyle(threeDBUTTON2())
                         .frame(width: 357,height: 43)
                         .foregroundColor(.black)
