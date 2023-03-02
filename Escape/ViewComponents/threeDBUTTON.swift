@@ -34,7 +34,6 @@ import UIKit
                 
                 
             }
-            
             .compositingGroup()
             
 

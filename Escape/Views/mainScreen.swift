@@ -10,7 +10,8 @@ import UIKit
 struct CustomColor {
     static let myColor = Color("myblue")
     static let myColor2 = Color("myGray")
-    
+    static let myColor3 = Color("myRed")
+    static let myColor4 = Color("myWhite")
     
     // Add more here...
 }
@@ -26,10 +27,13 @@ struct mainScreen: View {
                         .ignoresSafeArea()
                     
                     ZStack(alignment: .top){
-                        Button(action: {
+                        Button{
                             print("button pressed")
-                        }) {
-                            Image(systemName: "gearshape.fill")                            .font(.system(size: 55))
+                        }
+                        
+                    label: {
+                            Image(systemName: "gearshape.fill")
+                                .font(.system(size: 55))
                                 .foregroundColor(Color(.white))
                             
                             
