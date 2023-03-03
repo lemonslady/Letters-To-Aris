@@ -17,7 +17,7 @@ struct RoomView: View {
     @State var transcript: String = ""
     
     //Localization
-    let stringTest = NSLocalizedString("Hello", comment: "The act of greeting someone")
+    //let stringTest = NSLocalizedString("Hello", comment: "The act of greeting someone")
     
     //Timer
     @State private var index: Int = 0
