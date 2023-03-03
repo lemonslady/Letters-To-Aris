@@ -12,7 +12,8 @@ struct EscapeApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            SpeechRecognitionView()
+            
+            mainScreen()
         }
     }
 }

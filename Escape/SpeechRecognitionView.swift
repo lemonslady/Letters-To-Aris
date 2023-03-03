@@ -31,16 +31,19 @@ struct SpeechRecognitionView: View {
     
     @State private var isPressed = false
     @StateObject var speechRecognizer = SpeechRecognizer()
+    @Binding var transcript: String
     
     var body: some View {
         
         VStack{
             
-            Text(speechRecognizer.transcript)
+            //Text(speechRecognizer.transcript)
             Button(action: {
                 
             }, label: {
-                Image(systemName: "mic.circle.fill").font(.system(size: 90))
+                Image("Button_Speak_Rectangle")
+                    .resizable()
+                    .frame(width: 100, height: 100)
             })
             .foregroundColor(.gray)
             .pressAction {
@@ -57,6 +60,7 @@ struct SpeechRecognitionView: View {
                 }
                 else {
                     speechRecognizer.stopTranscribing()
+                    transcript = speechRecognizer.transcript
                 }
             })
         }
@@ -78,6 +82,6 @@ extension View {
 
 struct SpeechRecognitionView_Previews: PreviewProvider {
     static var previews: some View {
-        SpeechRecognitionView().previewInterfaceOrientation(.landscapeLeft)
+        SpeechRecognitionView(transcript: .constant("")).previewInterfaceOrientation(.landscapeLeft)
     }
 }

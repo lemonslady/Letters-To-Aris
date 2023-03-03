@@ -7,22 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB354F9D29A8B07C00208DB4 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		CB354FA129A8B46200208DB4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354FA029A8B46200208DB4 /* Object.swift */; };
 		CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B029A629E200D709F1 /* EscapeApp.swift */; };
-		CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B229A629E200D709F1 /* ContentView.swift */; };
 		CB3FC3B529A629E300D709F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3FC3B429A629E300D709F1 /* Assets.xcassets */; };
 		CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */; };
 		CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */; };
 		CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */; };
+		CB8619A929ACB42B004B81F6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8619A829ACB42B004B81F6 /* Room.swift */; };
+		CBD5A2A629B11CB50056FF8D /* Tabular-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD5A2A529B11CB50056FF8D /* Tabular-Variable.ttf */; };
+		CBD5A2AD29B11DE00056FF8D /* threeDBUTTON2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2A829B11DE00056FF8D /* threeDBUTTON2.swift */; };
+		CBD5A2AE29B11DE00056FF8D /* PauseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2A929B11DE00056FF8D /* PauseMenu.swift */; };
+		CBD5A2AF29B11DE00056FF8D /* HowToPlayMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2AA29B11DE00056FF8D /* HowToPlayMenu.swift */; };
+		CBD5A2B029B11DE00056FF8D /* threeDBUTTON3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2AB29B11DE00056FF8D /* threeDBUTTON3.swift */; };
+		CBD5A2B129B11DE00056FF8D /* threeDBUTTON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2AC29B11DE00056FF8D /* threeDBUTTON.swift */; };
+		CBD5A2B629B11E5E0056FF8D /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2B329B11E5E0056FF8D /* RoomView.swift */; };
+		CBD5A2B729B11E5E0056FF8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2B429B11E5E0056FF8D /* ContentView.swift */; };
+		CBD5A2B829B11E5E0056FF8D /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5A2B529B11E5E0056FF8D /* mainScreen.swift */; };
+		CBF5EB8729AE7FB400231706 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBF5EB8929AE7FB400231706 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB354FA029A8B46200208DB4 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		CB3FC3AD29A629E200D709F1 /* Escape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3FC3B029A629E200D709F1 /* EscapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeApp.swift; sourceTree = "<group>"; };
-		CB3FC3B229A629E200D709F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB3FC3B429A629E300D709F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB3FC3B729A629E300D709F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
 		CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
+		CB8619A829ACB42B004B81F6 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		CBD5A2A529B11CB50056FF8D /* Tabular-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tabular-Variable.ttf"; path = "Escape/Tabular-Variable.ttf"; sourceTree = "<group>"; };
+		CBD5A2A729B11CE40056FF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CBD5A2A829B11DE00056FF8D /* threeDBUTTON2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDBUTTON2.swift; sourceTree = "<group>"; };
+		CBD5A2A929B11DE00056FF8D /* PauseMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseMenu.swift; sourceTree = "<group>"; };
+		CBD5A2AA29B11DE00056FF8D /* HowToPlayMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayMenu.swift; sourceTree = "<group>"; };
+		CBD5A2AB29B11DE00056FF8D /* threeDBUTTON3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDBUTTON3.swift; sourceTree = "<group>"; };
+		CBD5A2AC29B11DE00056FF8D /* threeDBUTTON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDBUTTON.swift; sourceTree = "<group>"; };
+		CBD5A2B329B11E5E0056FF8D /* RoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		CBD5A2B429B11E5E0056FF8D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBD5A2B529B11E5E0056FF8D /* mainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
+		CBF5EB8829AE7FB400231706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CBF5EB8A29AE7FBC00231706 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,9 +61,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB354FA429A901CF00208DB4 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
 		CB3FC3A429A629E200D709F1 = {
 			isa = PBXGroup;
 			children = (
+				CBD5A2A529B11CB50056FF8D /* Tabular-Variable.ttf */,
 				CB3FC3AF29A629E200D709F1 /* Escape */,
 				CB3FC3AE29A629E200D709F1 /* Products */,
 			);
@@ -55,12 +88,16 @@
 		CB3FC3AF29A629E200D709F1 /* Escape */ = {
 			isa = PBXGroup;
 			children = (
+				CBD5A2B229B11E390056FF8D /* Views */,
+				CBD5A2A729B11CE40056FF8D /* Info.plist */,
+				CBD5A2A429B11C260056FF8D /* ViewComponents */,
+				CB354FA429A901CF00208DB4 /* Story */,
 				CB3FC3BE29A62C8000D709F1 /* Model */,
 				CB3FC3B029A629E200D709F1 /* EscapeApp.swift */,
-				CB3FC3B229A629E200D709F1 /* ContentView.swift */,
 				CB3FC3C329A636BC00D709F1 /* SpeechRecognitionView.swift */,
 				CB3FC3B429A629E300D709F1 /* Assets.xcassets */,
 				CB3FC3B629A629E300D709F1 /* Preview Content */,
+				CBF5EB8929AE7FB400231706 /* Localizable.strings */,
 			);
 			path = Escape;
 			sourceTree = "<group>";
@@ -77,8 +114,32 @@
 			isa = PBXGroup;
 			children = (
 				CB3FC3BF29A62C8F00D709F1 /* SpeechRecognition.swift */,
+				CB8619A829ACB42B004B81F6 /* Room.swift */,
+				CB354FA029A8B46200208DB4 /* Object.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CBD5A2A429B11C260056FF8D /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5A2AA29B11DE00056FF8D /* HowToPlayMenu.swift */,
+				CBD5A2A929B11DE00056FF8D /* PauseMenu.swift */,
+				CBD5A2AC29B11DE00056FF8D /* threeDBUTTON.swift */,
+				CBD5A2A829B11DE00056FF8D /* threeDBUTTON2.swift */,
+				CBD5A2AB29B11DE00056FF8D /* threeDBUTTON3.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		CBD5A2B229B11E390056FF8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5A2B429B11E5E0056FF8D /* ContentView.swift */,
+				CBD5A2B529B11E5E0056FF8D /* mainScreen.swift */,
+				CBD5A2B329B11E5E0056FF8D /* RoomView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +184,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = CB3FC3A429A629E200D709F1;
 			productRefGroup = CB3FC3AE29A629E200D709F1 /* Products */;
@@ -140,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3FC3B829A629E300D709F1 /* Preview Assets.xcassets in Resources */,
+				CBF5EB8729AE7FB400231706 /* Localizable.strings in Resources */,
+				CBD5A2A629B11CB50056FF8D /* Tabular-Variable.ttf in Resources */,
 				CB3FC3B529A629E300D709F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +215,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB3FC3B329A629E200D709F1 /* ContentView.swift in Sources */,
+				CBD5A2B829B11E5E0056FF8D /* mainScreen.swift in Sources */,
+				CBD5A2B129B11DE00056FF8D /* threeDBUTTON.swift in Sources */,
+				CBD5A2B029B11DE00056FF8D /* threeDBUTTON3.swift in Sources */,
+				CBD5A2B629B11E5E0056FF8D /* RoomView.swift in Sources */,
+				CB8619A929ACB42B004B81F6 /* Room.swift in Sources */,
 				CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */,
 				CB3FC3C429A636BC00D709F1 /* SpeechRecognitionView.swift in Sources */,
+				CB354FA129A8B46200208DB4 /* Object.swift in Sources */,
+				CBD5A2AD29B11DE00056FF8D /* threeDBUTTON2.swift in Sources */,
+				CBD5A2AE29B11DE00056FF8D /* PauseMenu.swift in Sources */,
+				CBD5A2B729B11E5E0056FF8D /* ContentView.swift in Sources */,
 				CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */,
+				CBD5A2AF29B11DE00056FF8D /* HowToPlayMenu.swift in Sources */,
+				CB354F9D29A8B07C00208DB4 /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBF5EB8929AE7FB400231706 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF5EB8829AE7FB400231706 /* en */,
+				CBF5EB8A29AE7FBC00231706 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB3FC3B929A629E300D709F1 /* Debug */ = {
@@ -283,9 +369,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Escape/Preview Content\"";
-				DEVELOPMENT_TEAM = T2BSAL5FW2;
+				DEVELOPMENT_TEAM = ZSK3Z899D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Escape/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Aris;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
@@ -322,6 +409,7 @@
 				DEVELOPMENT_TEAM = T2BSAL5FW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Escape/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Aris;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
