@@ -13,8 +13,7 @@ struct EscapeApp: App {
         WindowGroup {
             //ContentView()
             
-            //MOMENTANEO
-            RoomView(room: Room(background: "room1", audio: [""], subtitles: ["Hello, im't trying to create a room"], objects: [Object(image: "letter")]))
+            mainScreen()
         }
     }
 }

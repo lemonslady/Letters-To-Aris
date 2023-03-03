@@ -41,7 +41,9 @@ struct SpeechRecognitionView: View {
             Button(action: {
                 
             }, label: {
-                Image(systemName: "mic.circle.fill").font(.system(size: 90))
+                Image("Button_Speak_Rectangle")
+                    .resizable()
+                    .frame(width: 100, height: 100)
             })
             .foregroundColor(.gray)
             .pressAction {
