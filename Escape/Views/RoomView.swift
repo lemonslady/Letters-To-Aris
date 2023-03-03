@@ -38,7 +38,7 @@ struct RoomView: View {
                         SpeechRecognitionView( transcript: $transcript)
                         
                     }
-                    .frame(maxWidth: 1200, maxHeight: 745, alignment: .bottom)
+                    .frame(maxWidth: 1200, maxHeight: 720, alignment: .bottom)
                     
                     HStack{
                         Button{
@@ -55,29 +55,19 @@ struct RoomView: View {
                         
                         Spacer()
                         
-                        Button{
-                            print("button pressed")
-                        }
-                        
-                    label: {
-                        Image(systemName: "gearshape.fill")
-                            .font(.system(size: 40))
-                            .foregroundColor(Color(.white))
-                            .padding()
-                    }
-                        
                     }
                     .frame(maxWidth: 1151, maxHeight: 100)
                     .padding()
                     
                     
                     
-                    VStack{
+                    HStack (alignment: .center){
+                        Spacer()
                         Text(room.subtitles[index])
-                            .font(Font.custom("Tabular Variable", size: 20))
+                            .font(Font.custom("Tabular Variable", size: 17))
                              .foregroundColor(.white)
                              .multilineTextAlignment(.center)
-                             .frame(maxWidth: 1200, maxHeight: 104, alignment: .center)
+                             .frame(maxWidth: 611, maxHeight: 100, alignment: .center)
                              .padding(5)
                              .onReceive(timer){ _ in
                                  if (index < room.subtitles.count-1){
@@ -85,6 +75,7 @@ struct RoomView: View {
                                      print(index)
                                  }
                              }
+                        Spacer()
                         }
                          
                     

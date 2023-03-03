@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903107EA29B1F6860013F5B9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903107E929B1F6860013F5B9 /* SplashView.swift */; };
+		903107EC29B210770013F5B9 /* threeDMIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903107EB29B210770013F5B9 /* threeDMIC.swift */; };
+		903107EE29B2108D0013F5B9 /* QuitMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903107ED29B2108D0013F5B9 /* QuitMenu.swift */; };
 		CB354F9D29A8B07C00208DB4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CB354FA129A8B46200208DB4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB354FA029A8B46200208DB4 /* Object.swift */; };
 		CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FC3B029A629E200D709F1 /* EscapeApp.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		903107E929B1F6860013F5B9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		903107EB29B210770013F5B9 /* threeDMIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDMIC.swift; sourceTree = "<group>"; };
+		903107ED29B2108D0013F5B9 /* QuitMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitMenu.swift; sourceTree = "<group>"; };
 		CB354FA029A8B46200208DB4 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		CB3FC3AD29A629E200D709F1 /* Escape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3FC3B029A629E200D709F1 /* EscapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeApp.swift; sourceTree = "<group>"; };
@@ -125,9 +131,11 @@
 			children = (
 				CBD5A2AA29B11DE00056FF8D /* HowToPlayMenu.swift */,
 				CBD5A2A929B11DE00056FF8D /* PauseMenu.swift */,
+				903107ED29B2108D0013F5B9 /* QuitMenu.swift */,
 				CBD5A2AC29B11DE00056FF8D /* threeDBUTTON.swift */,
 				CBD5A2A829B11DE00056FF8D /* threeDBUTTON2.swift */,
 				CBD5A2AB29B11DE00056FF8D /* threeDBUTTON3.swift */,
+				903107EB29B210770013F5B9 /* threeDMIC.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 				CBD5A2B429B11E5E0056FF8D /* ContentView.swift */,
 				CBD5A2B529B11E5E0056FF8D /* mainScreen.swift */,
 				CBD5A2B329B11E5E0056FF8D /* RoomView.swift */,
+				903107E929B1F6860013F5B9 /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +226,7 @@
 			files = (
 				CBD5A2B829B11E5E0056FF8D /* mainScreen.swift in Sources */,
 				CBD5A2B129B11DE00056FF8D /* threeDBUTTON.swift in Sources */,
+				903107EA29B1F6860013F5B9 /* SplashView.swift in Sources */,
 				CBD5A2B029B11DE00056FF8D /* threeDBUTTON3.swift in Sources */,
 				CBD5A2B629B11E5E0056FF8D /* RoomView.swift in Sources */,
 				CB8619A929ACB42B004B81F6 /* Room.swift in Sources */,
@@ -229,6 +239,8 @@
 				CB3FC3B129A629E200D709F1 /* EscapeApp.swift in Sources */,
 				CBD5A2AF29B11DE00056FF8D /* HowToPlayMenu.swift in Sources */,
 				CB354F9D29A8B07C00208DB4 /* (null) in Sources */,
+				903107EE29B2108D0013F5B9 /* QuitMenu.swift in Sources */,
+				903107EC29B210770013F5B9 /* threeDMIC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,9 +56,8 @@ struct PauseMenu: View {
                     .foregroundColor(.white)
                     .padding()
                     
-                    NavigationLink{
-                        mainScreen()
-                            .navigationBarBackButtonHidden(true)
+                    Button{
+                        shownPM.toggle()
                     }label: {
                         Text("Quit")
                     }
