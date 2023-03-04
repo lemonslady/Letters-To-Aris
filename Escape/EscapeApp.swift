@@ -13,7 +13,7 @@ struct EscapeApp: App {
         WindowGroup {
             //ContentView()
             
-            mainScreen()
+            SplashView()
         }
     }
 }

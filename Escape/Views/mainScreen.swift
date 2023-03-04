@@ -12,6 +12,7 @@ struct CustomColor {
     static let myColor2 = Color("myGray")
     static let myColor3 = Color("myRed")
     static let myColor4 = Color("myWhite")
+    static let myColor5 = Color("myPurple")
     
     // Add more here...
 }
@@ -28,20 +29,6 @@ struct mainScreen: View {
                     Image("firstInt")
                         .resizable()
                         .ignoresSafeArea()
-                    
-                    ZStack(alignment: .top){
-                        Button{
-                            print("button pressed")
-                        }
-                        
-                    label: {
-                            Image(systemName: "gearshape.fill")
-                                .font(.system(size: 40))
-                                .foregroundColor(Color(.white))
-                            
-                            
-                        }
-                    }.frame(maxWidth: 1151, maxHeight: 150 ,alignment: .trailing)
                     
                     VStack{
                         ZStack{

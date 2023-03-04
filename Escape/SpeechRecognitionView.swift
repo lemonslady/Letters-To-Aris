@@ -38,31 +38,35 @@ struct SpeechRecognitionView: View {
         VStack{
             
             //Text(speechRecognizer.transcript)
-            Button(action: {
+            Button {
+                print("funziona")
                 
-            }, label: {
-                Image("Button_Speak_Rectangle")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-            })
-            .foregroundColor(.gray)
-            .pressAction {
-                isPressed = true
-                
-            } onRelease: {
-                isPressed = false
-                
-            }
-            .onChange(of: isPressed, perform: {_ in
-                if isPressed == true{
-                    speechRecognizer.reset()
-                    speechRecognizer.transcribe()
+            } label: {
+                Image(systemName: "mic.fill")
+            }.font(.system(size: 35))
+                .buttonStyle(threeDMIC())
+                .frame(width: 89, height: 70)
+                .foregroundColor(.white)
+                .padding()
+            
+                .foregroundColor(.gray)
+                .pressAction {
+                    isPressed = true
+                    
+                } onRelease: {
+                    isPressed = false
+                    
                 }
-                else {
-                    speechRecognizer.stopTranscribing()
-                    transcript = speechRecognizer.transcript
-                }
-            })
+                .onChange(of: isPressed, perform: {_ in
+                    if isPressed == true{
+                        speechRecognizer.reset()
+                        speechRecognizer.transcribe()
+                    }
+                    else {
+                        speechRecognizer.stopTranscribing()
+                        transcript = speechRecognizer.transcript
+                    }
+                })
         }
         
     }
