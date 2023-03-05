@@ -4,6 +4,7 @@
 //
 //  Created by Giulia Casucci on 22/02/23.
 //
+// Speech Recognition object with localization
 
 import AVFoundation
 import Foundation
@@ -39,8 +40,8 @@ class SpeechRecognizer: ObservableObject {
      requests access to the speech recognizer and the microphone.
      */
     init() {
+        //Localization
         recognizer = SFSpeechRecognizer(locale: Locale(identifier: Locale.preferredLanguages.first ?? "en"))
-        
         //print(Locale.preferredLanguages.first)
         
         Task(priority: .background) {

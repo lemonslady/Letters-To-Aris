@@ -4,15 +4,31 @@
 //
 //  Created by Alfonso Buonaguro on 03/03/23.
 //
+// The first view that appears after opening the app
 
 import SwiftUI
 
 struct SplashView: View {
-    @State var isActive:Bool = true
+    
+    @State var isActive: Bool = true
+    
+    //Array of Rooms
+    
+    //Variable that is used in case of playing
+    @State var isPlaying: Bool = false
+    @State var shownHTP = false
+    
     var body: some View {
         ZStack {
             if !self.isActive {
-                mainScreen()
+                if(isPlaying == true){
+                    RoomView(shownHTP: $shownHTP)
+                }
+                else{
+                    mainScreen(isPlaying: $isPlaying, shownHTP: $shownHTP)
+                }
+                
+                
             } else {
                 Color("myPurple")
                     .ignoresSafeArea()
@@ -25,13 +41,13 @@ struct SplashView: View {
                 .foregroundColor(.white)
             }
         }
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                        isActive.toggle()
-                }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                isActive.toggle()
             }
         }
     }
+}
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {

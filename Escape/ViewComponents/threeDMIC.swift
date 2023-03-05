@@ -11,12 +11,7 @@ struct threeDMIC: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         ZStack{
             
-            let offset: CGFloat = 5
-            
-            
-            
             RoundedRectangle(cornerRadius: 4)
-            
                 .foregroundColor(.black)
                 .offset(x: 0, y: 15)
           

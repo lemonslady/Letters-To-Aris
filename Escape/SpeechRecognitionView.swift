@@ -4,6 +4,7 @@
 //
 //  Created by Giulia Casucci on 22/02/23.
 //
+// The Speech Recognition view should appear only when it's possible to talk and give instructions
 
 import SwiftUI
 
@@ -33,30 +34,32 @@ struct SpeechRecognitionView: View {
     @StateObject var speechRecognizer = SpeechRecognizer()
     @Binding var transcript: String
     
+    
+    
     var body: some View {
         
         VStack{
             
-            //Text(speechRecognizer.transcript)
             Button {
-                print("funziona")
-                
+                print("OK")
             } label: {
                 Image(systemName: "mic.fill")
-            }.font(.system(size: 35))
+            }
+                .font(.system(size: 35))
                 .buttonStyle(threeDMIC())
                 .frame(width: 89, height: 70)
                 .foregroundColor(.white)
                 .padding()
-            
                 .foregroundColor(.gray)
                 .pressAction {
                     isPressed = true
+                    print("pressed")
                     
                 } onRelease: {
                     isPressed = false
-                    
+                    print("released")
                 }
+
                 .onChange(of: isPressed, perform: {_ in
                     if isPressed == true{
                         speechRecognizer.reset()
@@ -65,6 +68,7 @@ struct SpeechRecognitionView: View {
                     else {
                         speechRecognizer.stopTranscribing()
                         transcript = speechRecognizer.transcript
+                            
                     }
                 })
         }

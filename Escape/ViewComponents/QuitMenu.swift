@@ -32,7 +32,7 @@ struct QuitMenu: View {
                     .padding()
                     
                     NavigationLink{
-                        mainScreen()
+                        mainScreen(isPlaying: .constant(false), shownHTP: .constant(false))
                             .navigationBarBackButtonHidden(true)
                     }label: {
                         Text("Quit")
@@ -47,7 +47,7 @@ struct QuitMenu: View {
                 .frame(width: 579, height: 450)
             }
         }
-
+        
     }
 }
 

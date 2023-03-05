@@ -4,6 +4,7 @@
 //
 //  Created by Alfonso Buonaguro on 01/03/23.
 //
+// How to play. Appears or in the Main Screen or during the tutorial
 
 import SwiftUI
 

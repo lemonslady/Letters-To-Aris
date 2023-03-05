@@ -143,10 +143,10 @@
 		CBD5A2B229B11E390056FF8D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CBD5A2B429B11E5E0056FF8D /* ContentView.swift */,
-				CBD5A2B529B11E5E0056FF8D /* mainScreen.swift */,
-				CBD5A2B329B11E5E0056FF8D /* RoomView.swift */,
 				903107E929B1F6860013F5B9 /* SplashView.swift */,
+				CBD5A2B529B11E5E0056FF8D /* mainScreen.swift */,
+				CBD5A2B429B11E5E0056FF8D /* ContentView.swift */,
+				CBD5A2B329B11E5E0056FF8D /* RoomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Escape/Preview Content\"";
-				DEVELOPMENT_TEAM = T2BSAL5FW2;
+				DEVELOPMENT_TEAM = ZSK3Z899D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Escape/Info.plist;

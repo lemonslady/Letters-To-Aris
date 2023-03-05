@@ -4,6 +4,7 @@
 //
 //  Created by Alfonso Buonaguro on 01/03/23.
 //
+// Pause Menu. It can be called in each room
 
 import SwiftUI
 
