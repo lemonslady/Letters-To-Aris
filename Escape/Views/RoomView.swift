@@ -99,6 +99,13 @@ struct RoomView: View {
                     .resizable()
                     .ignoresSafeArea()
                 
+                ZStack{
+                    Image("Dialog")
+                        .resizable()
+                            .frame(width: 665.0, height: 117.0)
+                }.frame(width: 1200, height: 120, alignment: .center)
+                
+                
                 VStack{
                     Text(transcript)
                     SpeechRecognitionView( transcript: $transcript).disabled(!arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag).opacity(arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag ? 1 : 0.5)

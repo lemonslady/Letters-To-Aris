@@ -46,7 +46,6 @@ struct threeDMIC_Previews: PreviewProvider {
         }
         .foregroundColor(.white)
         .frame(width: 90, height: 90)
-        //sistemato il bottone quadrato
         .buttonStyle(threeDMIC())
     }
 

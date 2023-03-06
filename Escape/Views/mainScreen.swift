@@ -75,7 +75,7 @@ struct mainScreen: View {
                     
                 }
                 .blur(radius: shownHTP ? 8 : 0, opaque: true)
-                //tolta l'ombra dai bordi di how to play
+               
                 if shownHTP {
                     HowToPlayMenu(shownHTP: $shownHTP)
                 }

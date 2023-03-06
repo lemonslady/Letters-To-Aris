@@ -32,7 +32,13 @@ struct SplashView: View {
             } else {
                 Color("myPurple")
                     .ignoresSafeArea()
+                ZStack{
+                    Image("Dialog")
+                        .resizable()
+                            .frame(width: 665.0, height: 117.0)
+                }
                 VStack {
+                    
                     Text("Before we start, you can have a better experience using headphones and if you are in a quiet space")
                         .multilineTextAlignment(.center)
                 }

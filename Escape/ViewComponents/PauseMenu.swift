@@ -27,7 +27,7 @@ struct PauseMenu: View {
                             Image(systemName: "xmark")
                                 .font(.system(size: 25))
                                 .foregroundColor(.black)
-                            //aggiunto X come sfsymbol
+                          
                         }
                         Spacer()
                     }
