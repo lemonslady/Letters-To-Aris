@@ -4,6 +4,7 @@
 //
 //  Created by Giulia Casucci on 24/02/23.
 //
+// An object inside a room.
 
 import Foundation
 

@@ -4,6 +4,7 @@
 //
 //  Created by Giulia Casucci on 22/02/23.
 //
+// The Speech Recognition view should appear only when it's possible to talk and give instructions
 
 import SwiftUI
 
@@ -33,36 +34,43 @@ struct SpeechRecognitionView: View {
     @StateObject var speechRecognizer = SpeechRecognizer()
     @Binding var transcript: String
     
+    
+    
     var body: some View {
         
         VStack{
             
-            //Text(speechRecognizer.transcript)
-            Button(action: {
-                
-            }, label: {
-                Image("Button_Speak_Rectangle")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-            })
-            .foregroundColor(.gray)
-            .pressAction {
-                isPressed = true
-                
-            } onRelease: {
-                isPressed = false
-                
+            Button {
+                print("OK")
+            } label: {
+                Image(systemName: "mic.fill")
             }
-            .onChange(of: isPressed, perform: {_ in
-                if isPressed == true{
-                    speechRecognizer.reset()
-                    speechRecognizer.transcribe()
+                .font(.system(size: 35))
+                .buttonStyle(threeDMIC())
+                .frame(width: 89, height: 70)
+                .foregroundColor(.white)
+                .padding()
+                .foregroundColor(.gray)
+                .pressAction {
+                    isPressed = true
+                    print("pressed")
+                    
+                } onRelease: {
+                    isPressed = false
+                    print("released")
                 }
-                else {
-                    speechRecognizer.stopTranscribing()
-                    transcript = speechRecognizer.transcript
-                }
-            })
+
+                .onChange(of: isPressed, perform: {_ in
+                    if isPressed == true{
+                        speechRecognizer.reset()
+                        speechRecognizer.transcribe()
+                    }
+                    else {
+                        speechRecognizer.stopTranscribing()
+                        transcript = speechRecognizer.transcript
+                            
+                    }
+                })
         }
         
     }

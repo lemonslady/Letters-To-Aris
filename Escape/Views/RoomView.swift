@@ -4,108 +4,166 @@
 //
 //  Created by Giulia Casucci on 26/02/23.
 //
+// A general view of a room
 
 import SwiftUI
 
+
 struct RoomView: View {
+    
+    //Function to understand when ahd how go on
+    enum ContinueCase {
+        case timer
+        case speech
+        case miniGame
+    }
+    
+    func checkContinue(){
+        let continueCase: ContinueCase
+        
+        if(arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag == true){
+            continueCase = .speech
+        }
+        else if(arrayRooms.rooms[roomIndex].minigameEnabledFlag == true){
+            continueCase = .miniGame
+        }
+        else {
+            continueCase = .timer
+        }
+        
+        switch continueCase {
+        case .timer:
+            print("Case Timer")
+            checkTimer()
+            
+        case .speech:
+            print("Case Speech")
+            checkSpeech()
+            
+        case .miniGame:
+            print("Working on it")
+            
+        default:
+            print("Error")
+        }
+    }
+    
+    func checkTimer(){
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            if (timerIndex < arrayRooms.rooms[roomIndex].subtitles.count-1){
+                timerIndex += 1
+                checkTimer()
+            }
+            else{
+                timerIndex = 0
+                if (roomIndex < arrayRooms.rooms.count-1){
+                    roomIndex += 1
+                }
+            }
+        }
+    }
+    
+    func checkSpeech(){
+        if (transcript.contains(arrayRooms.rooms[roomIndex].command!)){
+            if (roomIndex < arrayRooms.rooms.count-1){
+                roomIndex += 1
+            }
+        }
+        
+    }
+    
+    //func checkMiniGame(){}
+    
+    
+    
+    //Object Array of Rooms
+    @StateObject var arrayRooms: ArrayRooms = ArrayRooms(rooms: [Room.Room1, Room.Room2, Room.Room3, Room.Room4])
+    @State var roomIndex: Int = 0
+    
     //Pause Menu
     @State var shownPM = false
-    @Binding var shownHTP : Bool
+    @Binding var shownHTP: Bool
     
-    @StateObject var room: Room
     //Passing the transcript from SpeechRecognitionView to RoomView
     @State var transcript: String = ""
     
-    //Localization
-    //let stringTest = NSLocalizedString("Hello", comment: "The act of greeting someone")
-    
     //Timer
-    @State private var index: Int = 0
-    let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
-
+    @State var timerIndex: Int = 0
     
     
     var body: some View {
-        NavigationStack {
-            ZStack{
-                GeometryReader{ geo in
-                    Image(room.background)
-                        .resizable()
-                        .ignoresSafeArea()
-                    
-                    VStack{
-                        Text(transcript)
-                        SpeechRecognitionView( transcript: $transcript)
-                        
-                    }
-                    .frame(maxWidth: 1200, maxHeight: 745, alignment: .bottom)
-                    
-                    HStack{
-                        Button{
-                            print("button pressed")
-                            shownPM.toggle()
-                        }
-                        
-                    label: {
-                        Image(systemName: "pause.fill")
-                            .font(.system(size: 40))
-                            .foregroundColor(Color(.white))
-                            .padding()
-                    }
-                        
-                        Spacer()
-                        
-                        Button{
-                            print("button pressed")
-                        }
-                        
-                    label: {
-                        Image(systemName: "gearshape.fill")
-                            .font(.system(size: 40))
-                            .foregroundColor(Color(.white))
-                            .padding()
-                    }
-                        
-                    }
-                    .frame(maxWidth: 1151, maxHeight: 100)
-                    .padding()
-                    
-                    
-                    
-                    VStack{
-                        Text(room.subtitles[index])
-                            .font(Font.custom("Tabular Variable", size: 20))
-                             .foregroundColor(.white)
-                             .multilineTextAlignment(.center)
-                             .frame(maxWidth: 1200, maxHeight: 104, alignment: .center)
-                             .padding(5)
-                             .onReceive(timer){ _ in
-                                 if (index < room.subtitles.count-1){
-                                     index = index + 1
-                                     print(index)
-                                 }
-                             }
-                        }
-                         
-                    
-                } //GeometryReader
-                .blur(radius: shownPM || shownHTP ? 8 : 0)
+        ZStack{
+            GeometryReader{ geo in
+                Image(arrayRooms.rooms[roomIndex].background)
+                    .resizable()
+                    .ignoresSafeArea()
                 
-                //For Pause Menu
-                if shownPM
-                { PauseMenu(shownPM: $shownPM, shownHTP: $shownHTP) }
+                VStack{
+                    Text(transcript)
+                    SpeechRecognitionView( transcript: $transcript).disabled(!arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag).opacity(arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag ? 1 : 0.5)
+                    
+                }.onChange(of: transcript){ _ in
+                    checkSpeech()
+                }
+                .frame(maxWidth: 1200, maxHeight: 720, alignment: .bottom)
                 
-                if shownHTP
-                { HowToPlayMenu(shownHTP: $shownHTP) }
+                HStack{
+                    Button{
+                        print("button pressed")
+                        shownPM.toggle()
+                    }
+                    
+                label: {
+                    Image(systemName: "pause.fill")
+                        .font(.system(size: 40))
+                        .foregroundColor(Color(.white))
+                        .padding()
+                }
+                    
+                    Spacer()
+                    
+                }
+                .frame(maxWidth: 1151, maxHeight: 100)
+                .padding()
                 
-            }//ZStack
-        }//NavigationLike
-        
+                
+                
+                HStack (alignment: .center){
+                    Spacer()
+                    Text(arrayRooms.rooms[roomIndex].subtitles[timerIndex])
+                        .font(Font.custom("Tabular Variable", size: 17))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: 611, maxHeight: 100, alignment: .center)
+                        .padding(5)
+                    
+                    Spacer()
+                }
+                
+                
+            } //GeometryReader
+            .blur(radius: shownPM || shownHTP ? 8 : 0)
+            
+            //For Pause Menu
+            if shownPM
+            { PauseMenu(shownPM: $shownPM, shownHTP: $shownHTP) }
+            
+            if shownHTP
+            { HowToPlayMenu(shownHTP: $shownHTP) }
+            
+        }//ZStack
+        .onAppear{
+            self.checkContinue()
+        }
+        .onChange(of: roomIndex){ _ in
+            self.checkContinue()
+        }
     }
 }
 
 struct RoomView_Previews: PreviewProvider {
     static var previews: some View {
-        RoomView(shownHTP: .constant(false), room: Room(background: "room2", audio: [""], subtitles: [NSLocalizedString("Sub1", comment: ""), NSLocalizedString("Sub2", comment: ""), NSLocalizedString("Sub3", comment: "") ], objects: [])).previewInterfaceOrientation(.landscapeLeft)
+        RoomView(shownHTP: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
     }
 }
