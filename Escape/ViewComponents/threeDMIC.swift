@@ -13,7 +13,7 @@ struct threeDMIC: ButtonStyle {
             
             RoundedRectangle(cornerRadius: 4)
                 .foregroundColor(.black)
-                .offset(x: 0, y: 15)
+                .offset(x: 0, y: 13)
           
             
             RoundedRectangle(cornerRadius: 4)
@@ -45,8 +45,8 @@ struct threeDMIC_Previews: PreviewProvider {
 
         }
         .foregroundColor(.white)
-        .frame(width: 89, height: 70)
-        
+        .frame(width: 90, height: 90)
+        //sistemato il bottone quadrato
         .buttonStyle(threeDMIC())
     }
 

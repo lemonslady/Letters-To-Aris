@@ -47,7 +47,7 @@ struct SpeechRecognitionView: View {
             }
                 .font(.system(size: 35))
                 .buttonStyle(threeDMIC())
-                .frame(width: 89, height: 70)
+                .frame(width: 90, height: 90)
                 .foregroundColor(.white)
                 .padding()
                 .foregroundColor(.gray)

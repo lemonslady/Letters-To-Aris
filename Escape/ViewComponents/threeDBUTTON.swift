@@ -39,7 +39,7 @@ struct threeD: ButtonStyle {
 
 struct threeDBUTTON_Previews: PreviewProvider {
     static var previews: some View {
-        Button("Play"){
+        Button("NEW GAME"){
             
         }
         .foregroundColor(.white)

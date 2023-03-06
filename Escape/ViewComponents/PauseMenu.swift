@@ -14,7 +14,6 @@ struct PauseMenu: View {
     @Binding var shownHTP : Bool
     
     var body: some View {
-        NavigationStack {
             ZStack{
                 Rectangle()
                     .foregroundColor(CustomColor.myColor4)
@@ -25,7 +24,10 @@ struct PauseMenu: View {
                         Button{
                             shownPM.toggle()
                         }label: {
-                            Image("Xsymbol")
+                            Image(systemName: "xmark")
+                                .font(.system(size: 25))
+                                .foregroundColor(.black)
+                            //aggiunto X come sfsymbol
                         }
                         Spacer()
                     }
@@ -86,7 +88,6 @@ struct PauseMenu: View {
             }
         }
     }
-}
 
 struct PauseMenu_Previews: PreviewProvider {
     static var previews: some View {

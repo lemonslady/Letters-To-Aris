@@ -21,8 +21,10 @@ struct HowToPlayMenu: View {
                     Button{
                         shownHTP.toggle()
                     }label: {
-                        Image("Xsymbol")
-                    }
+                        Image(systemName: "xmark")
+                            .font(.system(size: 25))
+                            .foregroundColor(.black)
+                    } //sostituita la x (image) con il SF SYMBOL
                     Spacer()
                 }
                 .frame(width: 470, height: 30)
@@ -32,26 +34,36 @@ struct HowToPlayMenu: View {
             .frame(width: 470, height: 430)
             
             VStack(alignment: .center){
+  
+               
+
                 Text ("How to play")
                     .font(.custom("Tabular Variable", size: 28))
                     .padding()
                 
-                Text("Choose where to look first by pressing")
+                Text("Choose where to look first by pressing the microphone button ").font(.custom("Tabular Variable", size: 17))
+                    .foregroundColor(.gray) +
+                Text(Image( "Button_Speak_Rectangle"))
+                
+ + Text(" you will see on the bottom of the screen.")
                     .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
-                HStack{
-                    Text("the microphone button")
+              /*  Text("Choose where to look first by pressing the microphone button")
+                    .font(.custom("Tabular Variable", size: 17))
+                    .foregroundColor(.gray)
+             
                     Image("Button_Speak_Rectangle")
                         .resizable()
                         .frame(width: 27, height: 31)
                     Text("you will see")
-                }
+                
                 .font(.custom("Tabular Variable", size: 17))
                 .foregroundColor(.gray)
                 
                 Text("on the bottom of the screen.")
                     .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
+                 */
                 
                 Text("This time you can either choose to look on the night stall, on the bed, or in the drawer.")
                     .font(.custom("Tabular Variable", size: 17))

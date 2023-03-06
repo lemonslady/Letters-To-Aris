@@ -120,11 +120,11 @@ struct RoomView: View {
                         .foregroundColor(Color(.white))
                         .padding()
                 }
-                    
+                .frame(maxWidth: 120, maxHeight: 90)
                     Spacer()
-                    
+                    //
                 }
-                .frame(maxWidth: 1151, maxHeight: 100)
+          
                 .padding()
                 
                 
