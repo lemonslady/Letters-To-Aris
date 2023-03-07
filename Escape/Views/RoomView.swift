@@ -84,6 +84,9 @@ struct RoomView: View {
     //Pause Menu
     @State var shownPM = false
     @Binding var shownHTP: Bool
+    @Binding var shownQ: Bool
+    @Binding var isPlaying: Bool
+    @Binding var isActive: Bool
     
     //Passing the transcript from SpeechRecognitionView to RoomView
     @State var transcript: String = ""
@@ -154,7 +157,10 @@ struct RoomView: View {
             
             //For Pause Menu
             if shownPM
-            { PauseMenu(shownPM: $shownPM, shownHTP: $shownHTP) }
+            { PauseMenu(shownPM: $shownPM, shownHTP: $shownHTP, shownQ: $shownQ) }
+            
+            if shownQ
+                        { QuitMenu(shownQ: $shownQ, shownHTP: $shownHTP, isPlaying: $isPlaying, isActive: $isActive) }
             
             if shownHTP
             { HowToPlayMenu(shownHTP: $shownHTP) }
@@ -171,6 +177,6 @@ struct RoomView: View {
 
 struct RoomView_Previews: PreviewProvider {
     static var previews: some View {
-        RoomView(shownHTP: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
+        RoomView(shownHTP: .constant(false), shownQ: .constant(false), isPlaying: .constant(true), isActive: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
     }
 }

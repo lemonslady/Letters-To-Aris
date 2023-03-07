@@ -12,6 +12,8 @@ struct HowToPlayMenu: View {
     @Binding var shownHTP : Bool
     var body: some View {
         ZStack{
+            Color("myPurple")
+                .edgesIgnoringSafeArea(.all)
             Rectangle()
                 .foregroundColor(CustomColor.myColor4)
                 .frame(width: 579, height: 507)
@@ -65,6 +67,7 @@ struct HowToPlayMenu: View {
                 
                 
             }
+            .fontWeight(.medium)
             .frame(width: 400,height: 400)
         }
     }

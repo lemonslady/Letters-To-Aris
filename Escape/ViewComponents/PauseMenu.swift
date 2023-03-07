@@ -12,9 +12,12 @@ struct PauseMenu: View {
 
     @Binding var shownPM : Bool
     @Binding var shownHTP : Bool
+    @Binding var shownQ: Bool
     
     var body: some View {
             ZStack{
+                Color("myPurple")
+                    .edgesIgnoringSafeArea(.all)
                 Rectangle()
                     .foregroundColor(CustomColor.myColor4)
                     .frame(width: 579, height: 507)
@@ -61,6 +64,7 @@ struct PauseMenu: View {
                     
                     Button{
                         shownPM.toggle()
+                        shownQ = true
                     }label: {
                         Text("Quit")
                     }
@@ -83,7 +87,7 @@ struct PauseMenu: View {
                     .padding()
                     
                     
-                }
+                }.fontWeight(.medium)
                 .frame(width: 579, height: 450)
             }
         }
@@ -91,6 +95,6 @@ struct PauseMenu: View {
 
 struct PauseMenu_Previews: PreviewProvider {
     static var previews: some View {
-        PauseMenu(shownPM: .constant(false), shownHTP: .constant(false))
+        PauseMenu(shownPM: .constant(false), shownHTP: .constant(false), shownQ: .constant(false))
     }
 }
