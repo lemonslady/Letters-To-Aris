@@ -51,7 +51,7 @@ struct RoomView: View {
     func checkTimer(){
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2){
-            if(shownPM == false){
+            if(shownPM == false && shownHTP == false && shownQ == false){
                 
                 if (timerIndex < arrayRooms.rooms[roomIndex].subtitles.count-1){
                     timerIndex += 1
@@ -110,7 +110,7 @@ struct RoomView: View {
                 ZStack{
                     Image("Dialog")
                         .resizable()
-                            .frame(width: 665.0, height: 117.0)
+                        .frame(width: 665.0, height: 117.0)
                 }.frame(width: 1200, height: 120, alignment: .center)
                 
                 
@@ -139,7 +139,7 @@ struct RoomView: View {
                     Spacer()
                     //
                 }
-          
+                
                 .padding()
                 
                 
@@ -165,7 +165,7 @@ struct RoomView: View {
             { PauseMenu(shownPM: $shownPM, shownHTP: $shownHTP, shownQ: $shownQ) }
             
             if shownQ
-                        { QuitMenu(shownQ: $shownQ, shownHTP: $shownHTP, isPlaying: $isPlaying, isActive: $isActive) }
+            { QuitMenu(shownQ: $shownQ, shownHTP: $shownHTP, isPlaying: $isPlaying, isActive: $isActive) }
             
             if shownHTP
             { HowToPlayMenu(shownHTP: $shownHTP) }
@@ -182,12 +182,23 @@ struct RoomView: View {
                 self.checkContinue()
             }
         }
+        .onChange(of: shownHTP){ _ in
+            if (shownPM == false){
+                self.checkContinue()
+            }
+            
+        }
         
+        .onChange(of: shownQ){ _ in
+            if (shownPM == false){
+                self.checkContinue()
+            }
+        }
     }
 }
-
-struct RoomView_Previews: PreviewProvider {
-    static var previews: some View {
-        RoomView(shownHTP: .constant(false), shownQ: .constant(false), isPlaying: .constant(true), isActive: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
+    
+    struct RoomView_Previews: PreviewProvider {
+        static var previews: some View {
+            RoomView(shownHTP: .constant(false), shownQ: .constant(false), isPlaying: .constant(true), isActive: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
+        }
     }
-}
