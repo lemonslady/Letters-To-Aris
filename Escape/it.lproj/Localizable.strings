@@ -6,8 +6,38 @@
   
 */
 
-"Sub1" = "E se la persona che conoscevi meglio, quella di cui ti potevi fidare, diventasse l’estranea?";
-"Sub2" = "E se potessi aprire gli occhi e vedere qualcosa che nessun altro ha mai potuto osservare?";
-"Sub3" = "C’è della luce nell’oscurità della tua mente?";
-"Sub4" = "La speech recognition funziona";
-"Command1" = "Vai";
+"Sub1.1" = "E se la persona che conoscevi meglio, quella di cui ti potevi fidare, diventasse l’estranea?";
+"Sub1.2" = "E se potessi aprire gli occhi e vedere qualcosa che nessun altro ha mai potuto osservare?";
+"Sub1.3" = "C’è della luce nell’oscurità della tua mente?";
+"Sub2.1" = "“Vai avanti, Aris” disse Barbara. Sapeva che l’unica cosa che avrebbe ricordato erano le sue mani, il suo caldo sorriso e la sua voce che chiamava il suo nome.";
+"Sub2.2" = "L’atmosfera è calma, un caldo raggio di luce passa attraverso la finestra e riscalda gli occhi di Aris. La sensazione del calore lo fa svegliare.";
+"Sub2.3" = "Il suo respiro è spezzato, il suo cuore batte così forte da sembragli uscire fuori dal petto. La stanza gli appare annebbiata.";
+"Sub2.4" = "Era forse un incubo? No, non poteva essere.";
+"Sub3.1" = "Ha bisogno mettere insieme i suoi pensieri, c'era una lettera da qualche parte, ma dov'era?";
+"HTP" = "Decidi dove vuoi guardare premendo il pulsante del microfono in fondo allo schermo. Questa volta puoi decidere di guardare sul comodino, sul letto o nella cassettiera.";
+"Sub4.1" = "Un comodino con una lettera. È di Barbara. Vuoi aprirla?";
+"Sub4.2" = "Il letto è sgombro, Aris comincia a mettere a fuoco la stanza, è ancora seduto.";
+"Sub4.3" = "Una cassettiera, vuoi aprirla?";
+"Sub5.1" = "La lettera profuma di ambrosia e fiori d’arancio, fragrante e ariosa. Aris prende la lettera, la apre e un mix di emozioni gli fa quasi fermare il cuore.";
+"Sub5.2" = "Dove vuoi guardare ora? Sul letto o sulla cassettiera?";
+"Sub6.1" = "“È da parte sua, ma perché proprio lei dopo tutto questo tempo? Non ha trovato nessun altro che faccia questo lavoro? Non c’era quel ragazzo, James, Jayce, Janine forse? Mh...”
+Ci stava pensando troppo? Forse era solo una lettera per invitarlo a prendere un tè, ma no.
+La lettera conteneva un messaggio";
+"Sub7.1" = "“Faro... Può significare una sola cosa” Aris pensò. Hanno bisogno del suo aiuto. È tempo di partire.";
+"Sub8.1" = "Aris si precipita nello scomparto della stanza, sotto la finestra, e prende la sua valigia.";
+"Sub8.2" = "La valigia è bloccata con una combinazione, è passato molto tempo dal suo ultimo viaggio.";
+"Sub8.3" = "“Cerca di ricordare Aris” sussurrò. L’unico modo per aprire la valigia è ricordare il giorno in cui la luce vince sull’oscurità, alcuni lo conoscono come il giorno di Santa Lucia, ma non Aris e Barbara. Qual è la data a cui sta pensando Aris?";
+"Sub8.4" = "Aris prepara freneticamente la valigia, solo l’essenziale; non deve dimenticare i suoi documenti speciali.";
+"Sub8.5" = "Stando davanti alla finestra Aris ricorda che i documenti sono sulla consolle, dove deve voltarsi ora? A destra o a sinistra?";
+"Sub9.1" = "Alla sua sinistra, sulla consolle c'è una piccola ciotola che contiene dei fogli, sono i documenti di cui Aris ha bisogno, li prende e chiude la valigia, è il momento di andare";
+"Sub9.2" = "Una cassettiera, vuoi aprirla?";
+"Sub10.1" = "La stanza cominncia a girare di nuovo, Aris perde la bussola, ha bisogno di raggiungere il guardaroba e prendere la foto";
+"Sub10.2" = "Ricordando la struttura della stanza, Aris ha bisogno di girarsi a destra o a sinistra?";
+"Sub11.1" = "Aris afferra la maniglia del guardaroba e lo apre, una foto sporge da una pila di vestiti, è il momento di mantenersi forte, recuperare il focus e cominciare il suo viaggio";
+"Test" = "La speech recognition funziona";
+"Command0" = "Vai";
+"Command1.1" = "Comodino";
+"Command1.2" = "Letto";
+"Command1.3" = "Cassettiera";
+"Command2.1" = "Si";
+"Command2.1" = "No";

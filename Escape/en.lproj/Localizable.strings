@@ -5,9 +5,39 @@
   Created by Giulia Casucci on 28/02/23.
   
 */
-
-"Sub1" = "What if the person you knew the most, the one you can trust, becomes the stranger?";
-"Sub2" = "What if you can open your eyes and see something no one else ever could?";
-"Sub3" = "Is there a light in the darkness of your mind?";
-"Sub4" = "The speech recognition is working";
-"Command1" = "Go";
+"Sub1.1" = "What if the person you knew the most, the one you can trust, becomes the stranger?";
+"Sub1.2" = "What if you can open your eyes and see something no one else ever could?";
+"Sub1.3" = "Is there a light in the darkness of your mind?";
+"Sub1.4" = "“Keep on going Aris”, Barbara said. He knew the only thing he could remember was her hands, her warm smile and her voice calling his name.";
+"Sub2.1" = "The room is calm, a warm ray of sun passes trough the window and warms Aris's eyes. He wakes up to the sensation of it.";
+"Sub2.2" = "Instantly his breath is broken, his heart is pounding. Still his bedroom doesn't look clear to him.";
+"Sub2.3" = "Was it all a bad dream? No, it couldn’t be.";
+"Sub3.1" = "He needs to recollect his thoughts, there was a letter he received the day before, but where was it?";
+"HTP" = "choose where to look first by pressing the microphone button on the screen, this time you can either choose to look on the night stall, on the bed, or in the drawer";
+"Sub4.1" = "A night stall with a letter on it. It says it is from Barbara. Will you open it?";
+"Sub4.2" = "The bed is empty, Aris starts to regain focus, he’s still seated.";
+"Sub4.3" = "A drawer, do you want to open it?";
+"Sub5.1" = "The letter smells of ambrosia and orange flowers, fragrant and airy. He picks it up, opens it and a mix of emotions almost makes his heart stop.";
+"Sub5.2" = "So where do you wanna look now? The bed or the drawer?";
+"Sub6.1" = "“It’s from her, but why her after all this time? Hasn’t she found anyone else to do the job? Wasn’t there that kid James, Jayce, or Janine perhaps? Mh...”. Was he worring too much? Maybe it was just a letter to ask him out for a tea, but no. The letter contained a message.";
+"Sub7.1" = "“Lighthouse...That can mean only one thing”, Aris thought. They needed his help. It was time to pack.";
+"Sub8.1" = "Aris quickly runs to the nook under the window and picks up his suitcase.";
+"Sub8.2" = "The suitcase is locked with a combination, a lot of time has passed since his last travel.";
+"Sub8.3" = "“Remember Aris“ he whispered. The only way to open the suitcase is to remember the day in which light wins over darkness, some might know it as Saint Lucy's day, but not Aris nor Barbara. What's the date Aris is thinking about?";
+"Sub8.4" = "Franticly, Aris packs his suitcase, nothing too fancy, just the essentials; not to be forgotten are the special documents.";
+"Sub8.5" = "Standing in front of the window Aris remembers they’re on the console, where should his eyes turn to? left or right?";
+"Sub9.1" = "On his left the consle has a small bowl containing some papers, those are the documents Aris needs, he takes them and closes his suitcase, it's time to go";
+"Sub9.2" = "A drawer, do you want to open it?";
+"Sub10.1" = "The room starts spinning again, Aris loses focus, he needs to reach the wardrobe and grab the picture";
+"Sub10.2" = "Remember the room structure, Aris needs to turn left or right to reach the wardrobe?";
+"Sub11.1" = "He grabs the handle of the wardrobe and opens it up, a picture is hanging from a pile of clothes";
+"Sub12.1" = "Time to hold on, regain focus and start the journey";
+"Test" = "The speech recognition is working";
+"Command0" = "Go";
+"Command1.1" = "Night Stall";
+"Command1.2" = "Bed";
+"Command1.3" = "Drawer";
+"Command2.1" = "Yes";
+"Command2.2" = "No";
+"Command3.1" = "Left";
+"Command3.2" = "Right";
