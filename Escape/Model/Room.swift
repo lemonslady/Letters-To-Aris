@@ -33,10 +33,11 @@ final class Room : Identifiable, ObservableObject{
         self.command = command
     }
     
-    static let Room1 = Room(background: "purple", subtitles: [NSLocalizedString("Sub1", comment: ""), NSLocalizedString("Sub2", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
+    static let Room1_1 = Room(background: "purple", subtitles: [NSLocalizedString("Sub1", comment: ""), NSLocalizedString("Sub2", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
     static let Room2 = Room(background: "firstInt", subtitles: [NSLocalizedString("Sub1", comment: ""), NSLocalizedString("Sub2", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
     static let Room3 = Room(background: "room2", subtitles: [NSLocalizedString("Sub3", comment: "")], speechRecognitionEnabledFlag: true, minigameEnabledFlag: false, command: NSLocalizedString("Command1", comment: ""))
     static let Room4 = Room(background: "purple", subtitles: [NSLocalizedString("Sub4", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
+    static let Room5 = Room(background: "purple", subtitles: [NSLocalizedString("Sub4", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
     
 }
 
