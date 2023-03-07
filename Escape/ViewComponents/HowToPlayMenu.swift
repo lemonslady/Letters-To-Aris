@@ -12,6 +12,8 @@ struct HowToPlayMenu: View {
     @Binding var shownHTP : Bool
     var body: some View {
         ZStack{
+            Color("myPurple")
+                .edgesIgnoringSafeArea(.all)
             Rectangle()
                 .foregroundColor(CustomColor.myColor4)
                 .frame(width: 579, height: 507)
@@ -21,8 +23,10 @@ struct HowToPlayMenu: View {
                     Button{
                         shownHTP.toggle()
                     }label: {
-                        Image("Xsymbol")
-                    }
+                        Image(systemName: "xmark")
+                            .font(.system(size: 25))
+                            .foregroundColor(.black)
+                    } //sostituita la x (image) con il SF SYMBOL
                     Spacer()
                 }
                 .frame(width: 470, height: 30)
@@ -32,26 +36,22 @@ struct HowToPlayMenu: View {
             .frame(width: 470, height: 430)
             
             VStack(alignment: .center){
-                Text ("How to play")
-                    .font(.custom("Tabular Variable", size: 28))
-                    .padding()
-                
-                Text("Choose where to look first by pressing")
-                    .font(.custom("Tabular Variable", size: 17))
-                    .foregroundColor(.gray)
-                HStack{
-                    Text("the microphone button")
-                    Image("Button_Speak_Rectangle")
-                        .resizable()
-                        .frame(width: 27, height: 31)
-                    Text("you will see")
-                }
-                .font(.custom("Tabular Variable", size: 17))
-                .foregroundColor(.gray)
-                
-                Text("on the bottom of the screen.")
-                    .font(.custom("Tabular Variable", size: 17))
-                    .foregroundColor(.gray)
+  
+               
+                VStack{
+                    Text ("How to play")
+                        .font(.custom("Tabular Variable", size: 28))
+                        .padding()
+                    
+                    Text("Choose where to look first by pressing the microphone button ").font(.custom("Tabular Variable", size: 17))
+                        .foregroundColor(.gray) +
+                    Text(Image(systemName: "mic.square.fill"))
+                        .foregroundColor(CustomColor.myColor)
+                    + Text(" you will see on the bottom of the screen.")
+                        .font(.custom("Tabular Variable", size: 17))
+                    
+                        .foregroundColor(.gray)
+                }                    .multilineTextAlignment(.center)
                 
                 Text("This time you can either choose to look on the night stall, on the bed, or in the drawer.")
                     .font(.custom("Tabular Variable", size: 17))
@@ -59,7 +59,7 @@ struct HowToPlayMenu: View {
                     .multilineTextAlignment(.center)
                     .padding()
                 
-                Text ("Just remember to have fun and enjoy the experience")
+                Text ("Just remember to have fun and enjoy the experience.")
                     .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
@@ -67,6 +67,7 @@ struct HowToPlayMenu: View {
                 
                 
             }
+            .fontWeight(.medium)
             .frame(width: 400,height: 400)
         }
     }

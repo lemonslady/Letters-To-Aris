@@ -34,20 +34,27 @@ struct mainScreen: View {
                         .resizable()
                         .ignoresSafeArea()
                     
-                    VStack{
+                    VStack (alignment: .center){
+                        Text("Letters to Aris")
+                                                    .font(.custom("Tabular Variable", size: 50))
+                                                    .foregroundColor(.white)
+                                                    .fontWeight(.medium)
+                                                    .padding(.top, 70)
+                                                Spacer()
+
                         ZStack{
                             Button {
                               isPlaying = true
                                 
                                     
                             } label: {
-                                Label("Play", systemImage: "play.fill")
+                                Label(" New Game ", systemImage: "play.fill")
                             }
                             .buttonStyle(threeD())
-                            .frame(width: 357,height: 43)
+                            .frame(width: 357,height: 50)
                             .foregroundColor(.white)
                             .padding()
-                            
+                            // cambiata la scritta "play" con "new game"
                             
                         }.font(.custom("Tabular Variable", size: 20))
                             .padding(5)
@@ -60,15 +67,15 @@ struct mainScreen: View {
                         }
                         .font(.custom("Tabular Variable", size: 20))
                         .buttonStyle(threeDBUTTON2())
-                        .frame(width: 357,height: 43)
+                        .frame(width: 357,height: 50)
                         .foregroundColor(.black)
                         .padding()
                         
-                    } .frame(maxWidth: 1300, maxHeight: 730, alignment: .bottom)
+                    } .frame(maxWidth: 1300, maxHeight: 745, alignment: .bottom)
                     
                 }
-                .blur(radius: shownHTP ? 8 : 0)
-                
+                .blur(radius: shownHTP ? 8 : 0, opaque: true)
+               
                 if shownHTP {
                     HowToPlayMenu(shownHTP: $shownHTP)
                 }

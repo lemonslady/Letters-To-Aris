@@ -12,10 +12,12 @@ struct PauseMenu: View {
 
     @Binding var shownPM : Bool
     @Binding var shownHTP : Bool
+    @Binding var shownQ: Bool
     
     var body: some View {
-        NavigationStack {
             ZStack{
+                Color("myPurple")
+                    .edgesIgnoringSafeArea(.all)
                 Rectangle()
                     .foregroundColor(CustomColor.myColor4)
                     .frame(width: 579, height: 507)
@@ -25,7 +27,10 @@ struct PauseMenu: View {
                         Button{
                             shownPM.toggle()
                         }label: {
-                            Image("Xsymbol")
+                            Image(systemName: "xmark")
+                                .font(.system(size: 25))
+                                .foregroundColor(.black)
+                          
                         }
                         Spacer()
                     }
@@ -51,20 +56,21 @@ struct PauseMenu: View {
                     }label: {
                         Text("Resume Game")
                     }
-                    .font(Font.custom("Tabular Variable", size: 17))
+                    .font(Font.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeD())
-                    .frame(width: 357,height: 43)
+                    .frame(width: 357,height: 50)
                     .foregroundColor(.white)
                     .padding()
                     
                     Button{
                         shownPM.toggle()
+                        shownQ = true
                     }label: {
                         Text("Quit")
                     }
-                    .font(.custom("Tabular Variable", size: 17))
+                    .font(.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeDBUTTON3())
-                    .frame(width: 357,height: 43)
+                    .frame(width: 357,height: 50)
                     .foregroundColor(.white)
                     .padding()
                     
@@ -74,22 +80,21 @@ struct PauseMenu: View {
                     }label: {
                         Text("How to Play")
                     }
-                    .font(.custom("Tabular Variable", size: 17))
+                    .font(.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeDBUTTON2())
-                    .frame(width: 357,height: 43)
+                    .frame(width: 357,height: 50)
                     .foregroundColor(.black)
                     .padding()
                     
                     
-                }
+                }.fontWeight(.medium)
                 .frame(width: 579, height: 450)
             }
         }
     }
-}
 
 struct PauseMenu_Previews: PreviewProvider {
     static var previews: some View {
-        PauseMenu(shownPM: .constant(false), shownHTP: .constant(false))
+        PauseMenu(shownPM: .constant(false), shownHTP: .constant(false), shownQ: .constant(false))
     }
 }

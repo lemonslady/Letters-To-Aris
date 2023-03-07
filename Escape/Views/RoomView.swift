@@ -89,6 +89,9 @@ struct RoomView: View {
     //Pause Menu
     @State var shownPM = false
     @Binding var shownHTP: Bool
+    @Binding var shownQ: Bool
+    @Binding var isPlaying: Bool
+    @Binding var isActive: Bool
     
     //Passing the transcript from SpeechRecognitionView to RoomView
     @State var transcript: String = ""
@@ -103,6 +106,13 @@ struct RoomView: View {
                 Image(arrayRooms.rooms[roomIndex].background)
                     .resizable()
                     .ignoresSafeArea()
+                
+                ZStack{
+                    Image("Dialog")
+                        .resizable()
+                            .frame(width: 665.0, height: 117.0)
+                }.frame(width: 1200, height: 120, alignment: .center)
+                
                 
                 VStack{
                     Text(transcript)
@@ -125,11 +135,11 @@ struct RoomView: View {
                         .foregroundColor(Color(.white))
                         .padding()
                 }
-                    
+                .frame(maxWidth: 120, maxHeight: 90)
                     Spacer()
-                    
+                    //
                 }
-                .frame(maxWidth: 1151, maxHeight: 100)
+          
                 .padding()
                 
                 
@@ -152,7 +162,10 @@ struct RoomView: View {
             
             //For Pause Menu
             if shownPM
-            { PauseMenu(shownPM: $shownPM, shownHTP: $shownHTP) }
+            { PauseMenu(shownPM: $shownPM, shownHTP: $shownHTP, shownQ: $shownQ) }
+            
+            if shownQ
+                        { QuitMenu(shownQ: $shownQ, shownHTP: $shownHTP, isPlaying: $isPlaying, isActive: $isActive) }
             
             if shownHTP
             { HowToPlayMenu(shownHTP: $shownHTP) }
@@ -175,6 +188,6 @@ struct RoomView: View {
 
 struct RoomView_Previews: PreviewProvider {
     static var previews: some View {
-        RoomView(shownHTP: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
+        RoomView(shownHTP: .constant(false), shownQ: .constant(false), isPlaying: .constant(true), isActive: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
     }
 }

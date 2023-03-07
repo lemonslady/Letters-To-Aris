@@ -17,12 +17,14 @@ struct SplashView: View {
     //Variable that is used in case of playing
     @State var isPlaying: Bool = false
     @State var shownHTP = false
-    
+    @State var shownQ = false
     var body: some View {
         ZStack {
             if !self.isActive {
                 if(isPlaying == true){
-                    RoomView(shownHTP: $shownHTP)
+                    RoomView(shownHTP: $shownHTP, shownQ: $shownQ, isPlaying: $isPlaying, isActive: $isActive)
+
+      
                 }
                 else{
                     mainScreen(isPlaying: $isPlaying, shownHTP: $shownHTP)
@@ -32,7 +34,13 @@ struct SplashView: View {
             } else {
                 Color("myPurple")
                     .ignoresSafeArea()
+                ZStack{
+                    Image("Dialog")
+                        .resizable()
+                            .frame(width: 665.0, height: 117.0)
+                }
                 VStack {
+                    
                     Text("Before we start, you can have a better experience using headphones and if you are in a quiet space")
                         .multilineTextAlignment(.center)
                 }
