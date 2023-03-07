@@ -25,5 +25,16 @@
 "Sub8.2" = "The suitcase is locked with a combination, a lot of time has passed since his last travel.";
 "Sub8.3" = "“Remember Aris“ he whispered. The only way to open the suitcase is to remember the day in which light wins over darkness, some might know it as Saint Lucy's day, but not Aris nor Barbara. What's the date Aris is thinking about?";
 "Sub8.4" = "Franticly, Aris packs his suitcase, nothing too fancy, just the essentials; not to be forgotten are the special documents.";
+"Sub8.5" = "Standing in front of the window Aris remembers they’re on the console, where should his eyes turn to? left or right?";
+"Sub9.1" = "On his left the consle has a small bowl containing some papers, those are the documents Aris needs, he takes them and closes his suitcase, it's time to go";
+"Sub9.2" = "A drawer, do you want to open it?";
+"Sub10.1" = "The room starts spinning again, Aris loses focus, he needs to reach the wardrobe and grab the picture";
+"Sub10.2" = "Remember the room structure, Aris needs to turn left or right to reach the wardrobe?";
+"Sub11.1" = "He grabs the handle of the wardrobe and opens it up, a picture is hanging from a pile of clothes, time to hold on, regain focus and start the journey";
 "Test" = "The speech recognition is working";
-"Command1" = "Go";
+"Command0" = "Go";
+"Command1.1" = "Night Stall";
+"Command1.2" = "Bed";
+"Command1.3" = "Drawer";
+"Command2.1" = "Yes";
+"Command2.1" = "No";
