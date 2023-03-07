@@ -50,16 +50,21 @@ struct RoomView: View {
     
     func checkTimer(){
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            if (timerIndex < arrayRooms.rooms[roomIndex].subtitles.count-1){
-                timerIndex += 1
-                checkTimer()
-            }
-            else{
-                timerIndex = 0
-                if (roomIndex < arrayRooms.rooms.count-1){
-                    roomIndex += 1
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+            if(shownPM == false){
+                
+                if (timerIndex < arrayRooms.rooms[roomIndex].subtitles.count-1){
+                    timerIndex += 1
+                    checkTimer()
+                    
                 }
+                else{
+                    timerIndex = 0
+                    if (roomIndex < arrayRooms.rooms.count-1){
+                        roomIndex += 1
+                    }
+                }
+                
             }
         }
     }
@@ -159,6 +164,12 @@ struct RoomView: View {
         .onChange(of: roomIndex){ _ in
             self.checkContinue()
         }
+        .onChange(of: shownPM){ _ in
+            if (shownPM == false){
+                self.checkContinue()
+            }
+        }
+        
     }
 }
 
