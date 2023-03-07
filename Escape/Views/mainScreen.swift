@@ -48,10 +48,10 @@ struct mainScreen: View {
                                 
                                     
                             } label: {
-                                Label("New Game", systemImage: "play.fill")
+                                Label(" New Game ", systemImage: "play.fill")
                             }
                             .buttonStyle(threeD())
-                            .frame(width: 357,height: 43)
+                            .frame(width: 357,height: 50)
                             .foregroundColor(.white)
                             .padding()
                             // cambiata la scritta "play" con "new game"
@@ -67,11 +67,11 @@ struct mainScreen: View {
                         }
                         .font(.custom("Tabular Variable", size: 20))
                         .buttonStyle(threeDBUTTON2())
-                        .frame(width: 357,height: 43)
+                        .frame(width: 357,height: 50)
                         .foregroundColor(.black)
                         .padding()
                         
-                    } .frame(maxWidth: 1300, maxHeight: 730, alignment: .bottom)
+                    } .frame(maxWidth: 1300, maxHeight: 745, alignment: .bottom)
                     
                 }
                 .blur(radius: shownHTP ? 8 : 0, opaque: true)

@@ -56,9 +56,9 @@ struct PauseMenu: View {
                     }label: {
                         Text("Resume Game")
                     }
-                    .font(Font.custom("Tabular Variable", size: 17))
+                    .font(Font.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeD())
-                    .frame(width: 357,height: 43)
+                    .frame(width: 357,height: 50)
                     .foregroundColor(.white)
                     .padding()
                     
@@ -68,9 +68,9 @@ struct PauseMenu: View {
                     }label: {
                         Text("Quit")
                     }
-                    .font(.custom("Tabular Variable", size: 17))
+                    .font(.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeDBUTTON3())
-                    .frame(width: 357,height: 43)
+                    .frame(width: 357,height: 50)
                     .foregroundColor(.white)
                     .padding()
                     
@@ -80,9 +80,9 @@ struct PauseMenu: View {
                     }label: {
                         Text("How to Play")
                     }
-                    .font(.custom("Tabular Variable", size: 17))
+                    .font(.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeDBUTTON2())
-                    .frame(width: 357,height: 43)
+                    .frame(width: 357,height: 50)
                     .foregroundColor(.black)
                     .padding()
                     

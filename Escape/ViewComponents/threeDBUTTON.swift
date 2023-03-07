@@ -15,7 +15,7 @@ struct threeD: ButtonStyle {
             
             RoundedRectangle(cornerRadius: 4)
                 .foregroundColor(.black)
-                .offset(x: 0, y: 15)
+                .offset(x: 0, y: 11)
             
             
             RoundedRectangle(cornerRadius: 4)
@@ -43,7 +43,7 @@ struct threeDBUTTON_Previews: PreviewProvider {
             
         }
         .foregroundColor(.white)
-        .frame(width: 357, height: 43)
+        .frame(width: 357, height: 55)
         .buttonStyle(threeD())
     }
 }
