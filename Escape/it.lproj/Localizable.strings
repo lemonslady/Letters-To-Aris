@@ -15,11 +15,13 @@
 "How to play1" = "Scegli dove guardare premendo il pulsante del microfono ";
 "How to play2" = " che vedrai nella parte inferiore dello schermo.";
 "How to play3" = "Segui le opzioni scritte che vedi sullo schermo.";
+"How to play3.1" = "Questa volta puoi scegliere di guardare sul comodino, sul letto o nell'armadio.";
 "How to play4" = "Ricorda solo di divertirti e goderti l'esperienza.";
 
 "Pause" = "Sei in pausa";
 "SubPause" = "Continua ad esplorare la stanza";
 "Resume" = "Riprendi";
+
 "Quit" = "Esci";
 "Quit1" = "Sei sicuro di voler uscire?";
 "Quit2" = "In questo modo terminerai il gioco";
@@ -38,17 +40,16 @@
 
 "Sub3.1" = "Ha bisogno mettere insieme i suoi pensieri, c'era una lettera da qualche parte, ma dov'era? Sul comodino, sul letto o sulla cassettiera?";
 
-"HTP" = "Decidi dove vuoi guardare premendo il pulsante del microfono in fondo allo schermo. Questa volta puoi decidere di guardare sul comodino, sul letto o nella cassettiera.";
-
 "Sub4.1" = "Un comodino con una lettera. È di Barbara. Vuoi aprirla?";
 "Sub4.1.1" = "Quindi, ora dove vuoi guardare?";
-"Sub4.2" = "Il letto è sgombro, Aris comincia a mettere a fuoco la stanza, è ancora seduto.";
-"Sub4.3" = "Una cassettiera, Aris la apre e vede che c'è una vecchia camicia all'interno.";
+"Sub4.2" = "Il letto è sgombro, Aris comincia a mettere a fuoco la stanza, è ancora seduto. Quindi, ora dove vuoi guardare?";
+"Sub4.3" = "Una cassettiera, Aris la apre e vede che c'è una vecchia camicia all'interno. Quindi, ora dove vuoi guardare?";
 
 "Sub5.1" = "La lettera profuma di ambrosia e fiori d’arancio, fragrante e ariosa. Aris prende la lettera, la apre e un mix di emozioni gli fa quasi fermare il cuore.";
-"Sub5.2" = "Dove vuoi guardare ora? Sul letto o sulla cassettiera?";
 
-"Sub6.1" = "“È da parte sua, ma perché proprio lei dopo tutto questo tempo? Non ha trovato nessun altro che faccia questo lavoro? Non c’era quel ragazzo, James, Jayce, Janine forse? Mh...” Ci stava pensando troppo? Forse era solo una lettera per invitarlo a prendere un tè, ma no. La lettera conteneva un messaggio";
+"Sub6.1" = "“È da parte sua, ma perché proprio lei dopo tutto questo tempo? Non ha trovato nessun altro che faccia questo lavoro? Non c’era quel ragazzo, James, Jayce, Janine forse? Mh...”";
+
+"Sub6.2" = "Ci stava pensando troppo? Forse era solo una lettera per invitarlo a prendere un tè, ma no. La lettera conteneva un messaggio";
 
 "Sub7.1" = "“Faro... Può significare una sola cosa” Aris pensò. Hanno bisogno del suo aiuto. È tempo di partire.";
 
@@ -75,7 +76,7 @@
 "Command1.1" = "Comodino";
 "Command1.2" = "Letto";
 "Command1.3" = "Cassettiera";
-"Command2.1" = "Si";
-"Command2.1" = "No";
+"Command2.1" = "Sì";
+"Command2.2" = "No";
 "Command3.1" = "Sinistra";
 "Command3.2" = "Destra";

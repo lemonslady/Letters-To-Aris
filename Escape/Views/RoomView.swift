@@ -50,7 +50,7 @@ struct RoomView: View {
     
     func checkTimer(){
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6){
             if(shownPM == false && shownHTP == false && shownQ == false){
                 
                 if (timerIndex < arrayRooms.rooms[roomIndex].subtitles.count-1){
@@ -74,9 +74,10 @@ struct RoomView: View {
         
         //Higher Order Function
         
-        let command = arrayRooms.rooms[roomIndex].command?.first(where:{ transcript.contains($0.key)})
+        let command = arrayRooms.rooms[roomIndex].command?.first(where:{ transcript.lowercased().contains($0.key.lowercased())})
         //cerca all'interno di command il primo indice(e unico)(nel dizionario la key è il primo valore, il secondo il value) che rispetta una determinata condizione
         print(command)
+        print(transcript)
         if (command != nil){
             roomIndex = arrayRooms.rooms.firstIndex(where: {
                 command?.value == $0.id_room
@@ -99,6 +100,7 @@ struct RoomView: View {
     
     //Pause Menu
     @State var shownPM = false
+    @State var firstHTP = false
     @Binding var shownHTP: Bool
     @Binding var shownQ: Bool
     @Binding var isPlaying: Bool
@@ -109,8 +111,6 @@ struct RoomView: View {
     
     //Timer
     @State var timerIndex: Int = 0
-    
-    @State private var fadeInOut = false
     
     @State var firstPress = true
     
@@ -191,7 +191,7 @@ struct RoomView: View {
             { QuitMenu(shownQ: $shownQ, shownHTP: $shownHTP, isPlaying: $isPlaying, isActive: $isActive) }
             
             if shownHTP
-            { HowToPlayMenu(shownHTP: $shownHTP) }
+            { HowToPlayMenu(shownHTP: $shownHTP, firstHTP: $firstHTP) }
             
         }//ZStack
         .onAppear{
@@ -200,21 +200,19 @@ struct RoomView: View {
         .onChange(of: roomIndex){ _ in
             self.checkContinue()
         }
-        .onChange(of: shownPM){ _ in
-            if (shownPM == false){
+        .onChange(of: shownPM || shownHTP || shownQ){ _ in
+            if (shownPM == false && shownPM == false && shownPM == false){
                 self.checkContinue()
             }
-        }
-        .onChange(of: shownHTP){ _ in
-            if (shownPM == false){
-                self.checkContinue()
-            }
-            
         }
         
-        .onChange(of: shownQ){ _ in
-            if (shownPM == false){
-                self.checkContinue()
+        .onChange(of: roomIndex){_ in
+            if(roomIndex == 2){
+                shownHTP.toggle()
+                firstHTP = true
+            }
+            else {
+                firstHTP = false
             }
         }
     }

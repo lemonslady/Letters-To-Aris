@@ -26,7 +26,7 @@ struct mainScreen: View {
     
     @Binding var isPlaying: Bool
     @Binding var shownHTP: Bool
-    
+    @State var firstHTP = false
     
     var body: some View {
         
@@ -81,7 +81,7 @@ struct mainScreen: View {
             .blur(radius: shownHTP ? 8 : 0, opaque: true)
             
             if shownHTP {
-                HowToPlayMenu(shownHTP: $shownHTP)
+                HowToPlayMenu(shownHTP: $shownHTP, firstHTP: $firstHTP)
             }
         }
         

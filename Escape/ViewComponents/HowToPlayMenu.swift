@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HowToPlayMenu: View {
     @Binding var shownHTP : Bool
+    @Binding var firstHTP: Bool
     var body: some View {
         ZStack{
             Color("myPurple")
@@ -54,11 +55,21 @@ struct HowToPlayMenu: View {
                         .foregroundColor(.gray)
                 }                    .multilineTextAlignment(.center)
                 
-                Text(NSLocalizedString("How to play3", comment: ""))
-                    .font(.custom("Tabular Variable", size: 17))
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                if(firstHTP == false){
+                    Text(NSLocalizedString("How to play3", comment: ""))
+                        .font(.custom("Tabular Variable", size: 17))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                }
+                else{
+                    Text(NSLocalizedString("How to play3.1", comment: ""))
+                        .font(.custom("Tabular Variable", size: 17))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                }
                 
                 Text(NSLocalizedString("How to play4", comment: ""))
                     .font(.custom("Tabular Variable", size: 17))
@@ -76,6 +87,6 @@ struct HowToPlayMenu: View {
 
 struct HowToPlayMenu_Previews: PreviewProvider {
     static var previews: some View {
-        HowToPlayMenu(shownHTP: .constant(false))
+        HowToPlayMenu(shownHTP: .constant(false), firstHTP: .constant(false))
     }
 }

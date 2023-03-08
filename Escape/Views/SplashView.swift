@@ -18,6 +18,7 @@ struct SplashView: View {
     @State var isPlaying: Bool = false
     @State var shownHTP = false
     @State var shownQ = false
+    @State var firstHTP = false
     var body: some View {
         ZStack {
             if !self.isActive {
