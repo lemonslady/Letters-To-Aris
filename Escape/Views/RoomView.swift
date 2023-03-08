@@ -69,21 +69,32 @@ struct RoomView: View {
         }
     }
     
+    
     func checkSpeech(){
-        if (transcript.contains(arrayRooms.rooms[roomIndex].command!)){
-            if (roomIndex < arrayRooms.rooms.count-1){
-                roomIndex += 1
-            }
-        }
         
+        //Higher Order Function
+        
+        let command = arrayRooms.rooms[roomIndex].command?.first(where:{ transcript.contains($0.key)})
+        //cerca all'interno di command il primo indice(e unico)(nel dizionario la key è il primo valore, il secondo il value) che rispetta una determinata condizione
+        print(command)
+        if (command != nil){
+            roomIndex = arrayRooms.rooms.firstIndex(where: {
+                command?.value == $0.id_room
+            })!
+        }
     }
+    
+    
+    
+    
+    
     
     //func checkMiniGame(){}
     
     
     
     //Object Array of Rooms
-    @StateObject var arrayRooms: ArrayRooms = ArrayRooms(rooms: [Room.Room1, Room.Room2, Room.Room3, Room.Room4])
+    @StateObject var arrayRooms: ArrayRooms = ArrayRooms(rooms: [Room.Room1, Room.Room2, Room.Room3, Room.Room4_1, Room.Room4_2, Room.Room4_3, Room.Room5, Room.Room6])
     @State var roomIndex: Int = 0
     
     //Pause Menu
@@ -98,6 +109,8 @@ struct RoomView: View {
     
     //Timer
     @State var timerIndex: Int = 0
+    
+    @State private var fadeInOut = false
     
     
     var body: some View {
@@ -152,13 +165,20 @@ struct RoomView: View {
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 611, maxHeight: 100, alignment: .center)
                         .padding(5)
+                        .onAppear(){
+                            //withAnimation(Animation.easeInOut(duration: 3).repeatForever(autoreverses: true))
+                            //{
+                            //    fadeInOut.toggle()
+                            //}
+                        }
+                    //.opacity(fadeInOut ? 0: 1)
+                    
                     
                     Spacer()
                 }
                 
                 
             } //GeometryReader
-            .blur(radius: shownPM || shownHTP ? 8 : 0)
             
             //For Pause Menu
             if shownPM
@@ -196,9 +216,9 @@ struct RoomView: View {
         }
     }
 }
-    
-    struct RoomView_Previews: PreviewProvider {
-        static var previews: some View {
-            RoomView(shownHTP: .constant(false), shownQ: .constant(false), isPlaying: .constant(true), isActive: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
-        }
+
+struct RoomView_Previews: PreviewProvider {
+    static var previews: some View {
+        RoomView(shownHTP: .constant(false), shownQ: .constant(false), isPlaying: .constant(true), isActive: .constant(false)).previewInterfaceOrientation(.landscapeLeft)
     }
+}
