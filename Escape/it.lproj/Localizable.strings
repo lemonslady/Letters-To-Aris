@@ -6,6 +6,28 @@
   
 */
 
+//Introduction
+"Introduction" = "Prima di iniziare, puoi avere un'esperienza migliore usando le cuffie e se ti trovi in ​​un luogo tranquillo";
+
+
+//Buttons
+"Game" = "Nuovo Gioco";
+"How to play" = "Come Giocare";
+"How to play1" = "Scegli dove guardare premendo il pulsante del microfono ";
+"How to play2" = " che vedrai nella parte inferiore dello schermo.";
+"How to play3" = "Segui le opzioni scritte che vedi sullo schermo.";
+"How to play4" = "Ricorda solo di divertirti e goderti l'esperienza.";
+
+
+
+"Pause" = "Sei in pausa";
+"SubPause" = "Continua ad esplorare la stanza";
+"Resume" = "Riprendi";
+"Quit" = "Esci";
+"Quit1" = "Sei sicuro di voler uscire?";
+"Quit2" = "In questo modo terminerai il gioco";
+
+//Rooms
 "Sub1.1" = "E se la persona che conoscevi meglio, quella di cui ti potevi fidare, diventasse l’estranea?";
 "Sub1.2" = "E se potessi aprire gli occhi e vedere qualcosa che nessun altro ha mai potuto osservare?";
 "Sub1.3" = "C’è della luce nell’oscurità della tua mente?";
@@ -49,6 +71,7 @@
 "Sub12.1" = "È il momento di tenere duro, ritrovare la concentrazione e iniziare il viaggio.";
 
 
+//Comandi
 "Command1.1" = "Comodino";
 "Command1.2" = "Letto";
 "Command1.3" = "Cassettiera";

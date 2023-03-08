@@ -43,9 +43,9 @@ struct PauseMenu: View {
                 VStack {
                     
                     VStack{
-                        Text("You are in pause").font(.custom("Tabular Variable", size: 22))
+                        Text("Pause").font(.custom("Tabular Variable", size: 22))
                         Spacer()
-                        Text("Continue looking in the room")
+                        Text("SubPause")
                             .font(Font.custom("Tabular Variable", size: 17))
                             .foregroundColor(Color(.gray))
                     }
@@ -54,7 +54,7 @@ struct PauseMenu: View {
                     Button{
                         shownPM.toggle()
                     }label: {
-                        Text("Resume Game")
+                        Text(NSLocalizedString("Resume", comment: ""))
                     }
                     .font(Font.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeD())
@@ -66,7 +66,7 @@ struct PauseMenu: View {
                         shownPM.toggle()
                         shownQ = true
                     }label: {
-                        Text("Quit")
+                        Text(NSLocalizedString("Quit", comment: ""))
                     }
                     .font(.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeDBUTTON3())
@@ -78,7 +78,7 @@ struct PauseMenu: View {
                         shownHTP.toggle()
                         shownPM.toggle()
                     }label: {
-                        Text("How to Play")
+                        Text(NSLocalizedString("How to play", comment: ""))
                     }
                     .font(.custom("Tabular Variable", size: 20))
                     .buttonStyle(threeDBUTTON2())

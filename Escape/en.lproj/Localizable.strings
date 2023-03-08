@@ -5,6 +5,29 @@
   Created by Giulia Casucci on 28/02/23.
   
 */
+
+//Introduction
+"Introduction" = "Before we start, you can have a better experience using headphones and if you are in a quiet space";
+
+
+//Buttons
+"Game" = "New Game";
+"How to play" = "How to Play";
+"How to play1" = "Choose where to look first by pressing the microphone button ";
+"How to play2" = " you will see on the bottom of the screen.";
+"How to play3" = "Follow the written options you see on the screen.";
+"How to play4" = "Just remember to have fun and enjoy the experience.";
+
+"Pause" = "You are in pause";
+"SubPause" = "Continue looking in the room";
+"Resume" = "Resume Game";
+
+"Quit" = "Quit";
+"Quit1" = "Are you sure you want to quit?";
+"Quit2" = "This way you will end your game";
+
+
+//Rooms
 "Sub1.1" = "What if the person you knew the most, the one you can trust, becomes the stranger?";
 "Sub1.2" = "What if you can open your eyes and see something no one else ever could?";
 "Sub1.3" = "Is there a light in the darkness of your mind?";
@@ -46,7 +69,8 @@
 "Sub12.1" = "Time to hold on, regain focus and start the journey";
 
 
-"Command1.1" = "Night Stall";
+//Comandi
+"Command1.1" = "Night Table";
 "Command1.2" = "Bed";
 "Command1.3" = "Drawer";
 "Command2.1" = "Yes";
