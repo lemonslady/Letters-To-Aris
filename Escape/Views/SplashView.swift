@@ -41,7 +41,7 @@ struct SplashView: View {
                 }
                 VStack {
                     
-                    Text("Before we start, you can have a better experience using headphones and if you are in a quiet space")
+                    Text(NSLocalizedString("Introduction", comment: ""))
                         .multilineTextAlignment(.center)
                 }
                 .frame(width: 611, height: 48, alignment: .center)
