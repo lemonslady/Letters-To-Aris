@@ -6,8 +6,11 @@
   
 */
 
+//INTRODUCTION
 "Introduction" = "Before we start, you can have a better experience using headphones and if you are in a quiet space";
 
+
+//BUTTONS
 "Game" = "New Game";
 "How to play" = "How to Play";
 "How to play1" = "Choose where to look first by pressing the microphone button ";
@@ -23,6 +26,10 @@
 "Quit1" = "Are you sure you want to quit?";
 "Quit2" = "This way you will end your game";
 
+"Hold" = "Hold to speak";
+
+
+//ROOMS
 "Sub1.1" = "What if the person you knew the most, the one you can trust, becomes the stranger?";
 "Sub1.2" = "What if you can open your eyes and see something no one else ever could?";
 "Sub1.3" = "Is there a light in the darkness of your mind?";
@@ -37,6 +44,7 @@
 "HTP" = "choose where to look first by pressing the microphone button on the screen, this time you can either choose to look on the night stall, on the bed, or in the drawer";
 
 "Sub4.1" = "A night stall with a letter on it. It says it is from Barbara. Will you open it?";
+"Sub4.1.1" = "So, where do you want to look now?";
 "Sub4.2" = "The bed is empty, Aris starts to regain focus, he’s still seated.";
 "Sub4.3" = "A drawer, do you want to open it?";
 
@@ -64,9 +72,10 @@
 "Sub12.1" = "Time to hold on, regain focus and start the journey";
 
 
-"Command1.1" = "Night Stall";
+//COMMANDS
+"Command1.1" = "Night Table";
 "Command1.2" = "Bed";
-"Command1.3" = "Drawer";
+"Command1.3" = "Cabinet";
 "Command2.1" = "Yes";
 "Command2.2" = "No";
 "Command3.1" = "Left";
