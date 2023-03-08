@@ -17,15 +17,15 @@ struct threeDMIC: ButtonStyle {
           
             
             RoundedRectangle(cornerRadius: 4)
-                .foregroundColor(CustomColor.myColor)
+                .foregroundColor(configuration.isPressed ? CustomColor.myColor6 : CustomColor.myColor)
                 .border(Color.black, width: 2)
                 .cornerRadius(4)
-                .offset(y: configuration.isPressed ? 5 : 0)
+                .offset(y: configuration.isPressed ? 8 : 0)
                 
 
             configuration.label
                 .offset(y: configuration.isPressed ? 5 : 0)
-            
+                .foregroundColor(configuration.isPressed ? CustomColor.myColor5 : .white)
             
         }
         .compositingGroup()
@@ -36,15 +36,13 @@ struct threeDMIC: ButtonStyle {
 
 
 struct threeDMIC_Previews: PreviewProvider {
-    static var previews: some View {
+   static var previews: some View {
         Button {
             print("Edit button was tapped")
         } label: {
             Image(systemName: "mic.fill")
                 .font(.system(size: 35))
-
         }
-        .foregroundColor(.white)
         .frame(width: 90, height: 90)
         .buttonStyle(threeDMIC())
     }
