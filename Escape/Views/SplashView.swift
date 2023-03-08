@@ -46,7 +46,7 @@ struct SplashView: View {
                 }
                 .frame(width: 611, height: 48, alignment: .center)
                 .font(Font.custom("Tabular Variable", size: 17))
-                .foregroundColor(.white)
+                .foregroundColor(CustomColor.myColor2)
             }
         }
         .onAppear {

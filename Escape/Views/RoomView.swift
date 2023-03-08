@@ -112,6 +112,8 @@ struct RoomView: View {
     
     @State private var fadeInOut = false
     
+    @State var firstPress = true
+    
     
     var body: some View {
         ZStack{
@@ -126,11 +128,12 @@ struct RoomView: View {
                         .frame(width: 665.0, height: 117.0)
                 }.frame(width: 1200, height: 120, alignment: .center)
                 
-                
                 VStack{
                     Text(transcript)
-                    SpeechRecognitionView( transcript: $transcript).disabled(!arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag).opacity(arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag ? 1 : 0.5)
-                    
+                    if(arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag == true && firstPress == true){
+                        HoldToPressLabel()
+                    }
+                    SpeechRecognitionView( transcript: $transcript, firstPress: $firstPress).disabled(!arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag).opacity(arrayRooms.rooms[roomIndex].speechRecognitionEnabledFlag ? 1 : 0.5)
                 }.onChange(of: transcript){ _ in
                     checkSpeech()
                 }
@@ -145,7 +148,7 @@ struct RoomView: View {
                 label: {
                     Image(systemName: "pause.fill")
                         .font(.system(size: 40))
-                        .foregroundColor(Color(.white))
+                        .foregroundColor(CustomColor.myColor2)
                         .padding()
                 }
                 .frame(maxWidth: 120, maxHeight: 90)
@@ -161,7 +164,7 @@ struct RoomView: View {
                     Spacer()
                     Text(arrayRooms.rooms[roomIndex].subtitles[timerIndex])
                         .font(Font.custom("Tabular Variable", size: 17))
-                        .foregroundColor(.white)
+                        .foregroundColor(CustomColor.myColor2)
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 611, maxHeight: 100, alignment: .center)
                         .padding(5)

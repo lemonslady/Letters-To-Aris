@@ -16,6 +16,7 @@ struct CustomColor {
     static let myColor4 = Color("myWhite")
     static let myColor5 = Color("myPurple")
     static let myColor6 = Color("myIce")
+    static let myColor7 = Color("myDarkPurple")
     
     // Add more here...
 }
@@ -38,7 +39,7 @@ struct mainScreen: View {
                     VStack (alignment: .center){
                         Text("Letters to Aris")
                                                     .font(.custom("Tabular Variable", size: 50))
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(CustomColor.myColor2)
                                                     .fontWeight(.medium)
                                                     .padding(.top, 70)
                                                 Spacer()
@@ -53,7 +54,8 @@ struct mainScreen: View {
                             }
                             .buttonStyle(threeD())
                             .frame(width: 357,height: 50)
-                            .foregroundColor(.white)
+                            .foregroundColor(CustomColor.myColor2)
+                            .fontWeight(.medium)
                             .padding()
                             // cambiata la scritta "play" con "new game"
                             
@@ -69,7 +71,8 @@ struct mainScreen: View {
                         .font(.custom("Tabular Variable", size: 20))
                         .buttonStyle(threeDBUTTON2())
                         .frame(width: 357,height: 50)
-                        .foregroundColor(.black)
+                        .foregroundColor(CustomColor.myColor7)
+                        .fontWeight(.medium)
                         .padding()
                         
                     } .frame(maxWidth: 1300, maxHeight: 745, alignment: .bottom)

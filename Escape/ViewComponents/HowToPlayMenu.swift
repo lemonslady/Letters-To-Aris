@@ -41,6 +41,7 @@ struct HowToPlayMenu: View {
                 VStack{
                     Text ("How to play")
                         .font(.custom("Tabular Variable", size: 28))
+                        .foregroundColor(CustomColor.myColor7)
                         .padding()
                     
                     Text("Choose where to look first by pressing the microphone button ").font(.custom("Tabular Variable", size: 17))

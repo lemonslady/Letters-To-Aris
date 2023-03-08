@@ -33,7 +33,7 @@ struct QuitMenu: View {
                 .font(Font.custom("Tabular Variable", size: 20))
                 .buttonStyle(threeD())
                 .frame(width: 357,height: 50)
-                .foregroundColor(.white)
+                .foregroundColor(CustomColor.myColor2)
                 .padding()
                 
                 Button{
@@ -46,7 +46,7 @@ struct QuitMenu: View {
                 .font(.custom("Tabular Variable", size: 20))
                 .buttonStyle(threeDBUTTON3())
                 .frame(width: 357,height: 50)
-                .foregroundColor(.white)
+                .foregroundColor(CustomColor.myColor2)
                 .padding()
                 
             }

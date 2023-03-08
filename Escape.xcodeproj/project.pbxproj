@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901DCE1629B8A71E00B8E8DC /* HoldToPressLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901DCE1529B8A71E00B8E8DC /* HoldToPressLabel.swift */; };
 		903107EA29B1F6860013F5B9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903107E929B1F6860013F5B9 /* SplashView.swift */; };
 		903107EC29B210770013F5B9 /* threeDMIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903107EB29B210770013F5B9 /* threeDMIC.swift */; };
 		903107EE29B2108D0013F5B9 /* QuitMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903107ED29B2108D0013F5B9 /* QuitMenu.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		901DCE1529B8A71E00B8E8DC /* HoldToPressLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldToPressLabel.swift; sourceTree = "<group>"; };
 		903107E929B1F6860013F5B9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		903107EB29B210770013F5B9 /* threeDMIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeDMIC.swift; sourceTree = "<group>"; };
 		903107ED29B2108D0013F5B9 /* QuitMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitMenu.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				CBD5A2A829B11DE00056FF8D /* threeDBUTTON2.swift */,
 				CBD5A2AB29B11DE00056FF8D /* threeDBUTTON3.swift */,
 				903107EB29B210770013F5B9 /* threeDMIC.swift */,
+				901DCE1529B8A71E00B8E8DC /* HoldToPressLabel.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				CBD5A2B129B11DE00056FF8D /* threeDBUTTON.swift in Sources */,
 				903107EA29B1F6860013F5B9 /* SplashView.swift in Sources */,
 				CBD5A2B029B11DE00056FF8D /* threeDBUTTON3.swift in Sources */,
+				901DCE1629B8A71E00B8E8DC /* HoldToPressLabel.swift in Sources */,
 				CBD5A2B629B11E5E0056FF8D /* RoomView.swift in Sources */,
 				CB8619A929ACB42B004B81F6 /* Room.swift in Sources */,
 				CB3FC3C029A62C8F00D709F1 /* SpeechRecognition.swift in Sources */,
