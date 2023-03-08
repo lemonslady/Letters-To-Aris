@@ -5,10 +5,12 @@
   Created by Giulia Casucci on 28/02/23.
   
 */
+//INTRODUCTION
 "Introduction" = "Prima di iniziare, puoi avere un'esperienza migliore usando le cuffie e se ti trovi in ​​un luogo tranquillo";
 
 
-"Game" = "Nuovo Gioco";
+//BUTTONS
+"Game" = "Nuova Partita";
 "How to play" = "Come Giocare";
 "How to play1" = "Scegli dove guardare premendo il pulsante del microfono ";
 "How to play2" = " che vedrai nella parte inferiore dello schermo.";
@@ -22,6 +24,9 @@
 "Quit1" = "Sei sicuro di voler uscire?";
 "Quit2" = "In questo modo terminerai il gioco";
 
+"Hold" = "Premi per parlare";
+
+//STANZE
 "Sub1.1" = "E se la persona che conoscevi meglio, quella di cui ti potevi fidare, diventasse l’estranea?";
 "Sub1.2" = "E se potessi aprire gli occhi e vedere qualcosa che nessun altro ha mai potuto osservare?";
 "Sub1.3" = "C’è della luce nell’oscurità della tua mente?";
@@ -65,6 +70,7 @@
 "Sub12.1" = "È il momento di tenere duro, ritrovare la concentrazione e iniziare il viaggio.";
 
 
+//COMANDI
 "Command1.1" = "Comodino";
 "Command1.2" = "Letto";
 "Command1.3" = "Cassettiera";

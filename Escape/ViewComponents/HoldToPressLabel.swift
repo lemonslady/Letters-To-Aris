@@ -11,7 +11,7 @@ struct HoldToPressLabel: View {
     var body: some View {
         ZStack{
             Image("Tag")
-            Text (NSLocalizedString("Hold to speak", comment: ""))
+            Text (NSLocalizedString("Hold", comment: ""))
                 .padding(.bottom, 32.0)
                 .font(.custom("Tabular Variable", size: 17))
                 .fontWeight(.medium)
