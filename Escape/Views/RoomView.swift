@@ -94,7 +94,7 @@ struct RoomView: View {
     
     
     //Object Array of Rooms
-    @StateObject var arrayRooms: ArrayRooms = ArrayRooms(rooms: [Room.Room1, Room.Room2, Room.Room3, Room.Room4_1, Room.Room4_1_1, Room.Room4_2, Room.Room4_3, Room.Room5, Room.Room6])
+    @StateObject var arrayRooms: ArrayRooms = ArrayRooms(rooms: [Room.Room1, Room.Room2, Room.Room3, Room.Room4_1, Room.Room4_1_1, Room.Room4_2, Room.Room4_3, Room.Room5, Room.Room6, Room.Room7])
     @State var roomIndex: Int = 0
     
     //Pause Menu

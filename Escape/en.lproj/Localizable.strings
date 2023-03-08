@@ -43,15 +43,16 @@
 
 "HTP" = "choose where to look first by pressing the microphone button on the screen, this time you can either choose to look on the night stall, on the bed, or in the drawer";
 
-"Sub4.1" = "A night stall with a letter on it. It says it is from Barbara. Will you open it?";
+"Sub4.1" = "A night table with a letter on it. It says it is from Barbara. Will you open it?";
 "Sub4.1.1" = "So, where do you want to look now?";
-"Sub4.2" = "The bed is empty, Aris starts to regain focus, he’s still seated.";
-"Sub4.3" = "A drawer, Aris opens it and finds an old shirt.";
+"Sub4.2" = "The bed is empty, Aris starts to regain focus, he’s still seated. So, where do you want to look now?";
+"Sub4.3" = "A cabinet, Aris opens it and finds an old shirt. So, where do you want to look now?";
 
 "Sub5.1" = "The letter smells of ambrosia and orange flowers, fragrant and airy. He picks it up, opens it and a mix of emotions almost makes his heart stop.";
 "Sub5.2" = "So where do you wanna look now? The bed or the drawer?";
 
-"Sub6.1" = "“It’s from her, but why her after all this time? Hasn’t she found anyone else to do the job? Wasn’t there that kid James, Jayce, or Janine perhaps? Mh...”. Was he worring too much? Maybe it was just a letter to ask him out for a tea, but no. The letter contained a message.";
+"Sub6.1" = "“It’s from her, but why her after all this time? Hasn’t she found anyone else to do the job? Wasn’t there that kid James, Jayce, or Janine perhaps? Mh...”. Was he worring too much?";
+"Sub6.2" = "Maybe it was just a letter to ask him out for a tea, but no. The letter contained a message.";
 
 "Sub7.1" = "“Lighthouse...That can mean only one thing”, Aris thought. They needed his help. It was time to pack.";
 
@@ -73,7 +74,7 @@
 
 
 //COMMANDS
-"Command1.1" = "Night Table";
+"Command1.1" = "Night";
 "Command1.2" = "Bed";
 "Command1.3" = "Cabinet";
 "Command2.1" = "Yes";

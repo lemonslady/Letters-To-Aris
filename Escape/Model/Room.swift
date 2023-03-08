@@ -46,10 +46,10 @@ final class Room : Identifiable, ObservableObject{
     
     //Night Table - Comodino
     //Caso perfetto
-    static let Room4_1 = Room(id_room: "Room4_1", background: "Nightstall_With_Letter", subtitles: [NSLocalizedString("Sub4.1", comment: "")], speechRecognitionEnabledFlag: true, minigameEnabledFlag: false, command:[ NSLocalizedString("Command2.1", comment: "") : "Room5", NSLocalizedString("Command2.2", comment: "") : "Room5"])
+    static let Room4_1 = Room(id_room: "Room4_1", background: "Nightstall_With_Letter", subtitles: [NSLocalizedString("Sub4.1", comment: "")], speechRecognitionEnabledFlag: true, minigameEnabledFlag: false, command:[ NSLocalizedString("Command2.1", comment: "") : "Room5", NSLocalizedString("Command2.2", comment: "") : "Room4_1_1"])
     
     //In case is no
-    static let Room4_1_1 = Room(id_room: "Room4_1", background: "purple", subtitles: [NSLocalizedString("Sub4.1.1", comment: "")], speechRecognitionEnabledFlag: true, minigameEnabledFlag: false, command:[NSLocalizedString("Command1.1", comment: ""): "Room4_1", NSLocalizedString("Command1.2", comment: ""): "Room4_2", NSLocalizedString("Command1.3", comment: ""): "Room4_3"])
+    static let Room4_1_1 = Room(id_room: "Room4_1_1", background: "purple", subtitles: [NSLocalizedString("Sub4.1.1", comment: "")], speechRecognitionEnabledFlag: true, minigameEnabledFlag: false, command:[NSLocalizedString("Command1.1", comment: ""): "Room4_1", NSLocalizedString("Command1.2", comment: ""): "Room4_2", NSLocalizedString("Command1.3", comment: ""): "Room4_3"])
     
     //Letto - Bed
     static let Room4_2 = Room(id_room: "Room4_2", background: "Bed_Scene", subtitles: [NSLocalizedString("Sub4.2", comment: "")], speechRecognitionEnabledFlag: true, minigameEnabledFlag: false, command:[NSLocalizedString("Command1.1", comment: ""): "Room4_1", NSLocalizedString("Command1.3", comment: ""): "Room4_3"])
@@ -60,7 +60,7 @@ final class Room : Identifiable, ObservableObject{
     static let Room5 = Room(id_room: "Room5", background: "Closed_Letter", subtitles: [NSLocalizedString("Sub5.1", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
     
     
-    static let Room6 = Room(id_room: "Room6",background: "Opened_Letter", subtitles: [NSLocalizedString("Sub6.1", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
+    static let Room6 = Room(id_room: "Room6",background: "Opened_Letter", subtitles: [NSLocalizedString("Sub6.1", comment: ""), NSLocalizedString("Sub6.2", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
    
    static let Room7 = Room(id_room: "Room7", background: "Opened_Letter", subtitles: [NSLocalizedString("Sub7.1", comment: "")], speechRecognitionEnabledFlag: false, minigameEnabledFlag: false, command: nil)
     
