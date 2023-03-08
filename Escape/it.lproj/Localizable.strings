@@ -36,13 +36,14 @@
 "Sub2.3" = "Il suo respiro è spezzato, il suo cuore batte così forte da sembragli uscire fuori dal petto. La stanza gli appare annebbiata.";
 "Sub2.4" = "Era forse un incubo? No, non poteva essere.";
 
-"Sub3.1" = "Ha bisogno mettere insieme i suoi pensieri, c'era una lettera da qualche parte, ma dov'era?";
+"Sub3.1" = "Ha bisogno mettere insieme i suoi pensieri, c'era una lettera da qualche parte, ma dov'era? Sul comodino, sul letto o sulla cassettiera?";
 
 "HTP" = "Decidi dove vuoi guardare premendo il pulsante del microfono in fondo allo schermo. Questa volta puoi decidere di guardare sul comodino, sul letto o nella cassettiera.";
 
 "Sub4.1" = "Un comodino con una lettera. È di Barbara. Vuoi aprirla?";
+"Sub4.1.1" = "Quindi, ora dove vuoi guardare?";
 "Sub4.2" = "Il letto è sgombro, Aris comincia a mettere a fuoco la stanza, è ancora seduto.";
-"Sub4.3" = "Una cassettiera, vuoi aprirla?";
+"Sub4.3" = "Una cassettiera, Aris la apre e vede che c'è una vecchia camicia all'interno.";
 
 "Sub5.1" = "La lettera profuma di ambrosia e fiori d’arancio, fragrante e ariosa. Aris prende la lettera, la apre e un mix di emozioni gli fa quasi fermare il cuore.";
 "Sub5.2" = "Dove vuoi guardare ora? Sul letto o sulla cassettiera?";
