@@ -5,6 +5,22 @@
   Created by Giulia Casucci on 28/02/23.
   
 */
+"Introduction" = "Prima di iniziare, puoi avere un'esperienza migliore usando le cuffie e se ti trovi in ​​un luogo tranquillo";
+
+
+"Game" = "Nuovo Gioco";
+"How to play" = "Come Giocare";
+"How to play1" = "Scegli dove guardare premendo il pulsante del microfono ";
+"How to play2" = " che vedrai nella parte inferiore dello schermo.";
+"How to play3" = "Segui le opzioni scritte che vedi sullo schermo.";
+"How to play4" = "Ricorda solo di divertirti e goderti l'esperienza.";
+
+"Pause" = "Sei in pausa";
+"SubPause" = "Continua ad esplorare la stanza";
+"Resume" = "Riprendi";
+"Quit" = "Esci";
+"Quit1" = "Sei sicuro di voler uscire?";
+"Quit2" = "In questo modo terminerai il gioco";
 
 "Sub1.1" = "E se la persona che conoscevi meglio, quella di cui ti potevi fidare, diventasse l’estranea?";
 "Sub1.2" = "E se potessi aprire gli occhi e vedere qualcosa che nessun altro ha mai potuto osservare?";

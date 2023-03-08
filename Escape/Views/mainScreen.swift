@@ -23,67 +23,67 @@ struct CustomColor {
 
 
 struct mainScreen: View {
-
+    
     @Binding var isPlaying: Bool
     @Binding var shownHTP: Bool
     
     
     var body: some View {
         
-            ZStack{
-                GeometryReader{ geo in
-                    Image("firstInt")
-                        .resizable()
-                        .ignoresSafeArea()
+        ZStack{
+            GeometryReader{ geo in
+                Image("firstInt")
+                    .resizable()
+                    .ignoresSafeArea()
+                
+                VStack (alignment: .center){
+                    Text("Letters to Aris")
+                        .font(.custom("Tabular Variable", size: 50))
+                        .foregroundColor(CustomColor.myColor2)
+                        .fontWeight(.medium)
+                        .padding(.top, 70)
+                    Spacer()
                     
-                    VStack (alignment: .center){
-                        Text("Letters to Aris")
-                                                    .font(.custom("Tabular Variable", size: 50))
-                                                    .foregroundColor(CustomColor.myColor2)
-                                                    .fontWeight(.medium)
-                                                    .padding(.top, 70)
-                                                Spacer()
-
-                        ZStack{
-                            Button {
-                              isPlaying = true
-                                
-                                    
-                            } label: {
-                                Label(" New Game ", systemImage: "play.fill")
-                            }
-                            .buttonStyle(threeD())
-                            .frame(width: 357,height: 50)
-                            .foregroundColor(CustomColor.myColor2)
-                            .fontWeight(.medium)
-                            .padding()
-                            // cambiata la scritta "play" con "new game"
+                    ZStack{
+                        Button {
+                            isPlaying = true
                             
-                        }.font(.custom("Tabular Variable", size: 20))
-                            .padding(5)
-                        
-                        Button{
-                            shownHTP.toggle()
-                            print(shownHTP)
-                        }label: {
-                            Text("How to Play")
+                            
+                        } label: {
+                            Label(" " + NSLocalizedString("Game", comment: "") + " ", systemImage: "play.fill")
                         }
-                        .font(.custom("Tabular Variable", size: 20))
-                        .buttonStyle(threeDBUTTON2())
+                        .buttonStyle(threeD())
                         .frame(width: 357,height: 50)
-                        .foregroundColor(CustomColor.myColor7)
+                        .foregroundColor(CustomColor.myColor2)
                         .fontWeight(.medium)
                         .padding()
+                        // cambiata la scritta "play" con "new game"
                         
-                    } .frame(maxWidth: 1300, maxHeight: 745, alignment: .bottom)
+                    }.font(.custom("Tabular Variable", size: 20))
+                        .padding(5)
                     
-                }
-                .blur(radius: shownHTP ? 8 : 0, opaque: true)
-               
-                if shownHTP {
-                    HowToPlayMenu(shownHTP: $shownHTP)
-                }
+                    Button{
+                        shownHTP.toggle()
+                        print(shownHTP)
+                    }label: {
+                        Text(NSLocalizedString("How to play", comment: ""))
+                    }
+                    .font(.custom("Tabular Variable", size: 20))
+                    .buttonStyle(threeDBUTTON2())
+                    .frame(width: 357,height: 50)
+                    .foregroundColor(CustomColor.myColor7)
+                    .fontWeight(.medium)
+                    .padding()
+                    
+                } .frame(maxWidth: 1300, maxHeight: 745, alignment: .bottom)
+                
             }
+            .blur(radius: shownHTP ? 8 : 0, opaque: true)
+            
+            if shownHTP {
+                HowToPlayMenu(shownHTP: $shownHTP)
+            }
+        }
         
     }
     

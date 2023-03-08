@@ -39,28 +39,28 @@ struct HowToPlayMenu: View {
   
                
                 VStack{
-                    Text ("How to play")
+                    Text(NSLocalizedString("How to play", comment: ""))
                         .font(.custom("Tabular Variable", size: 28))
                         .foregroundColor(CustomColor.myColor7)
                         .padding()
                     
-                    Text("Choose where to look first by pressing the microphone button ").font(.custom("Tabular Variable", size: 17))
+                    Text(NSLocalizedString("How to play1", comment: "")).font(.custom("Tabular Variable", size: 17))
                         .foregroundColor(.gray) +
                     Text(Image(systemName: "mic.square.fill"))
                         .foregroundColor(CustomColor.myColor)
-                    + Text(" you will see on the bottom of the screen.")
+                    + Text(NSLocalizedString("How to play2", comment: ""))
                         .font(.custom("Tabular Variable", size: 17))
                     
                         .foregroundColor(.gray)
                 }                    .multilineTextAlignment(.center)
                 
-                Text("This time you can either choose to look on the night stall, on the bed, or in the drawer.")
+                Text(NSLocalizedString("How to play3", comment: ""))
                     .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                     .padding()
                 
-                Text ("Just remember to have fun and enjoy the experience.")
+                Text(NSLocalizedString("How to play4", comment: ""))
                     .font(.custom("Tabular Variable", size: 17))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)

@@ -16,9 +16,9 @@ struct QuitMenu: View {
             VStack() {
                 
                 VStack{
-                    Text("Are you sure you want to quit?").font(.custom("Tabular Variable", size: 22))
+                    Text(NSLocalizedString("Quit1", comment: "")).font(.custom("Tabular Variable", size: 22))
                     Spacer()
-                    Text("This way you will end your game")
+                    Text(NSLocalizedString("Quit2", comment: ""))
                         .font(Font.custom("Tabular Variable", size: 17))
                         .foregroundColor(Color(.gray))
                 }
@@ -28,7 +28,7 @@ struct QuitMenu: View {
                     shownQ.toggle()
                     
                 }label: {
-                    Text("Resume Game")
+                    Text(NSLocalizedString("Resume", comment: ""))
                 }
                 .font(Font.custom("Tabular Variable", size: 20))
                 .buttonStyle(threeD())
@@ -41,7 +41,7 @@ struct QuitMenu: View {
                     isPlaying = false
                     
                 }label: {
-                    Text("Quit")
+                    Text(NSLocalizedString("Quit", comment: ""))
                 }
                 .font(.custom("Tabular Variable", size: 20))
                 .buttonStyle(threeDBUTTON3())
