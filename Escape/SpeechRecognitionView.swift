@@ -33,6 +33,7 @@ struct SpeechRecognitionView: View {
     @State private var isPressed = false
     @StateObject var speechRecognizer = SpeechRecognizer()
     @Binding var transcript: String
+    @Binding var firstPress : Bool
     
     
     
@@ -54,10 +55,12 @@ struct SpeechRecognitionView: View {
                 .pressAction {
                     isPressed = true
                     print("pressed")
+                    firstPress = false
                     
                 } onRelease: {
                     isPressed = false
                     print("released")
+                    firstPress = false
                 }
 
                 .onChange(of: isPressed, perform: {_ in
@@ -90,6 +93,6 @@ extension View {
 
 struct SpeechRecognitionView_Previews: PreviewProvider {
     static var previews: some View {
-        SpeechRecognitionView(transcript: .constant("")).previewInterfaceOrientation(.landscapeLeft)
+        SpeechRecognitionView(transcript: .constant(""), firstPress: .constant(true)).previewInterfaceOrientation(.landscapeLeft)
     }
 }

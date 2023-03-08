@@ -13,13 +13,13 @@ struct threeD: ButtonStyle {
         ZStack{
             
             RoundedRectangle(cornerRadius: 4)
-                .foregroundColor(.black)
+                .foregroundColor(CustomColor.myColor7)
                 .offset(x: 0, y: 11)
             
             
             RoundedRectangle(cornerRadius: 4)
                 .foregroundColor(CustomColor.myColor)
-                .border(Color.black, width: 2)
+                .border(CustomColor.myColor7, width: 2)
                 .cornerRadius(4)
                 .offset(y: configuration.isPressed ? 5 : 0)
             
@@ -30,6 +30,7 @@ struct threeD: ButtonStyle {
             
         }
         .compositingGroup()
+        
         
         
     }
