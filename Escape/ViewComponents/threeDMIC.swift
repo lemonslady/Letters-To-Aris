@@ -12,7 +12,7 @@ struct threeDMIC: ButtonStyle {
         ZStack{
             
             RoundedRectangle(cornerRadius: 4)
-                .foregroundColor(.black)
+                .foregroundColor(CustomColor.myColor5)
                 .offset(x: 0, y: 13)
           
             
