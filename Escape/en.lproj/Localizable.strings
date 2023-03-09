@@ -72,7 +72,7 @@
 
 
 //COMMANDS
-"Command1.1" = "night";
+"Command1.1" = "table";
 "Command1.2" = "bed";
 "Command1.3" = "cabinet";
 "Command2.1" = "yes";
